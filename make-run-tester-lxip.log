@@ -1,0 +1,1599 @@
+including /home/devuan/genode/tool/run/power_on/qemu
+including /home/devuan/genode/tool/run/log/qemu
+including /home/devuan/genode/tool/run/image/iso
+including /home/devuan/genode/tool/run/boot_dir/nova
+including /home/devuan/genode/repos/tester/run/tester_lxip.run
+building targets:  tester_lxip core init drivers/timer drivers/nic drivers/platform server/report_rom drivers/acpi
+spawn make tester_lxip core init drivers/timer drivers/nic drivers/platform server/report_rom drivers/acpi
+make[1]: Entering directory '/home/devuan/genode/build/x86_64'
+checking library dependencies...
+Skip target drivers/nic/fec because it requires [00;33marm_v7[0m
+Skip target drivers/nic/spec/gem because it requires [00;33mcadence_gem[0m
+Skip target drivers/nic/spec/linux because it requires [00;33mlinux[0m
+Skip target drivers/nic/spec/pbxa9 because it requires [00;33mpbxa9[0m
+Skip target drivers/platform/spec/arndale because it requires [00;33marndale[0m
+Skip target drivers/platform/spec/imx53 because it requires [00;33mimx53[0m
+Skip target drivers/platform/spec/odroid_x2 because it requires [00;33modroid_x2[0m
+Skip target drivers/platform/spec/rpi because it requires [00;33mrpi[0m
+Skip target drivers/timer/epit/wand_quad because it requires [00;33mwand_quad[0m
+Skip target drivers/timer/fiasco because it requires [00;33mfiasco[0m
+Skip target drivers/timer/foc because it requires [00;33mfoc[0m
+Skip target drivers/timer/hw because it requires [00;33mhw[0m
+Skip target drivers/timer/linux because it requires [00;33mlinux[0m
+[00;33m  Library [0mldso-startup
+    COMPILE  startup.o
+[00;33m  Library [0mcxx
+    COMPILE  exception.o
+[00;33m  Library [0mstartup-nova
+    COMPILE  _main.o
+[00;33m  Library [0mdde_ipxe_nic
+[00;33m  Library [0mlibc-stdlib
+    COMPILE  _Exit.o
+[00;33m  Library [0mlibc-locale
+    COMPILE  ascii.o
+[00;33m  Library [0mlibc-string
+[00;33m  Library [0mlibc-stdio
+    COMPILE  arch/i386/core/rdtsc_timer.o
+    COMPILE  bcmp.o
+    COMPILE  _flock_stub.o
+    MERGE    ldso-startup.lib.a
+    COMPILE  a64l.o
+    COMPILE  arch/x86/core/x86_string.o
+    COMPILE  bcopy.o
+    COMPILE  big5.o
+    COMPILE  abort.o
+    COMPILE  asprintf.o
+    COMPILE  core/bitops.o
+    COMPILE  clrerr.o
+    COMPILE  dprintf.o
+    COMPILE  core/iobuf.o
+    COMPILE  btowc.o
+    COMPILE  core/list.o
+    COMPILE  fclose.o
+    COMPILE  abs.o
+    COMPILE  guard.o
+    COMPILE  bzero.o
+    COMPILE  fcloseall.o
+    COMPILE  core/random.o
+    COMPILE  atof.o
+    COMPILE  fdopen.o
+    COMPILE  collate.o
+    COMPILE  ffs.o
+    COMPILE  atoi.o
+    COMPILE  core/string.o
+    COMPILE  feof.o
+    COMPILE  malloc_free.o
+    ASSEMBLE crt0.o
+    COMPILE  atol.o
+    COMPILE  ferror.o
+    COMPILE  init_main_thread.o
+    COMPILE  ffsl.o
+    COMPILE  fflush.o
+    COMPILE  ffsll.o
+    COMPILE  collcmp.o
+    COMPILE  atoll.o
+    COMPILE  dde.o
+    COMPILE  bsearch.o
+    COMPILE  fls.o
+    COMPILE  fgetc.o
+    COMPILE  flsl.o
+    COMPILE  euc.o
+    COMPILE  fgetln.o
+    COMPILE  div.o
+    COMPILE  getenv.o
+    COMPILE  flsll.o
+    COMPILE  fgetpos.o
+    COMPILE  memccpy.o
+    COMPILE  fix_grouping.o
+    COMPILE  fgets.o
+    COMPILE  index.o
+    COMPILE  dde_support.o
+    MERGE    startup-nova.lib.a
+    COMPILE  gb18030.o
+    COMPILE  fgetwc.o
+    COMPILE  misc.o
+    COMPILE  memchr.o
+    COMPILE  drivers/bitbash/bitbash.o
+    COMPILE  fgetwln.o
+    COMPILE  memcmp.o
+    COMPILE  gb2312.o
+    COMPILE  fgetws.o
+    COMPILE  drivers/bitbash/spi_bit.o
+    COMPILE  memcpy.o
+    COMPILE  getopt.o
+    COMPILE  gbk.o
+[00;33m  Library [0mlibc-gen
+    COMPILE  fileno.o
+    COMPILE  memmem.o
+    COMPILE  __getosreldate.o
+    COMPILE  drivers/bus/pciextra.o
+    COMPILE  getopt_long.o
+    COMPILE  isctype.o
+    COMPILE  memmove.o
+    COMPILE  __xuname.o
+    COMPILE  new_delete.o
+    COMPILE  findfp.o
+    COMPILE  memrchr.o
+    COMPILE  memset.o
+    COMPILE  iswctype.o
+    COMPILE  rindex.o
+    COMPILE  flags.o
+    COMPILE  stpcpy.o
+    COMPILE  unwind.o
+    COMPILE  _once_stub.o
+    COMPILE  getsubopt.o
+    COMPILE  stpncpy.o
+    COMPILE  strcasecmp.o
+    MERGE    supc++.o
+    COMPILE  fopen.o
+    COMPILE  hcreate.o
+    CONVERT  supc++.o
+    MERGE    cxx.lib.a
+    COMPILE  fprintf.o
+    COMPILE  fpurge.o
+    COMPILE  strcasestr.o
+    COMPILE  _pthread_stubs.o
+    COMPILE  ldpart.o
+    COMPILE  lmessages.o
+    COMPILE  fputc.o
+    COMPILE  lmonetary.o
+    COMPILE  heapsort.o
+    COMPILE  strcat.o
+    COMPILE  lnumeric.o
+    COMPILE  strchr.o
+    COMPILE  imaxabs.o
+    COMPILE  localeconv.o
+    COMPILE  strcmp.o
+    COMPILE  fputs.o
+    COMPILE  insque.o
+    COMPILE  imaxdiv.o
+    COMPILE  mblen.o
+    COMPILE  strcpy.o
+    COMPILE  fputwc.o
+    COMPILE  mbrlen.o
+    COMPILE  l64a.o
+    COMPILE  mbrtowc.o
+    COMPILE  labs.o
+    COMPILE  _rand48.o
+    COMPILE  ldiv.o
+    COMPILE  strcspn.o
+    COMPILE  _spinlock_stub.o
+    COMPILE  llabs.o
+    COMPILE  fputws.o
+    COMPILE  lldiv.o
+    COMPILE  lsearch.o
+    COMPILE  mbsinit.o
+    COMPILE  _thread_init.o
+    COMPILE  mbsnrtowcs.o
+    COMPILE  alarm.o
+    COMPILE  merge.o
+    COMPILE  fread.o
+    COMPILE  strdup.o
+    COMPILE  mbsrtowcs.o
+    COMPILE  arc4random.o
+    COMPILE  strerror.o
+    COMPILE  mbstowcs.o
+    COMPILE  freopen.o
+[00;33m  Library [0mlibc-gdtoa
+    COMPILE  strlcat.o
+    COMPILE  _hdtoa.o
+    COMPILE  mbtowc.o
+    COMPILE  _hldtoa.o
+    COMPILE  strlcpy.o
+    COMPILE  mskanji.o
+    COMPILE  ptsname.o
+    COMPILE  strlen.o
+    COMPILE  fscanf.o
+    COMPILE  assert.o
+    COMPILE  qsort.o
+    COMPILE  fseek.o
+    COMPILE  nextwctype.o
+    COMPILE  _ldtoa.o
+    COMPILE  basename.o
+    COMPILE  strmode.o
+    COMPILE  fsetpos.o
+    COMPILE  dmisc.o
+    COMPILE  nl_langinfo.o
+    COMPILE  strncat.o
+    COMPILE  check_utility_compat.o
+    COMPILE  ftell.o
+    COMPILE  funopen.o
+    COMPILE  nomacros.o
+    COMPILE  dtoa.o
+    COMPILE  strncmp.o
+    COMPILE  fvwrite.o
+    COMPILE  qsort_r.o
+    COMPILE  strncpy.o
+    COMPILE  fwalk.o
+    COMPILE  none.o
+    COMPILE  clock.o
+    COMPILE  strndup.o
+    COMPILE  closedir.o
+    COMPILE  rpmatch.o
+    COMPILE  fwide.o
+    COMPILE  g_Qfmt.o
+    COMPILE  strnlen.o
+    COMPILE  confstr.o
+    COMPILE  rune.o
+    COMPILE  fwprintf.o
+    COMPILE  strnstr.o
+    COMPILE  crypt.o
+    COMPILE  radixsort.o
+    COMPILE  strpbrk.o
+    COMPILE  fwrite.o
+    COMPILE  g__fmt.o
+    COMPILE  strrchr.o
+    COMPILE  fwscanf.o
+    COMPILE  strsep.o
+    COMPILE  g_ddfmt.o
+    COMPILE  getc.o
+    COMPILE  ctermid.o
+    COMPILE  runetype.o
+    COMPILE  strsignal.o
+    COMPILE  g_dfmt.o
+    COMPILE  g_ffmt.o
+    COMPILE  getchar.o
+    COMPILE  daemon.o
+    COMPILE  setlocale.o
+    COMPILE  strspn.o
+    COMPILE  rand.o
+    COMPILE  g_xLfmt.o
+    COMPILE  dirname.o
+    COMPILE  g_xfmt.o
+    COMPILE  random.o
+    COMPILE  getdelim.o
+    COMPILE  strstr.o
+    COMPILE  disklabel.o
+    COMPILE  strtok.o
+    COMPILE  gdtoa.o
+    COMPILE  getline.o
+    COMPILE  swab.o
+    COMPILE  setrunelocale.o
+    COMPILE  reallocf.o
+    COMPILE  wcpcpy.o
+    COMPILE  realpath.o
+    COMPILE  wcpncpy.o
+    COMPILE  dlfcn.o
+    COMPILE  table.o
+    COMPILE  gets.o
+    COMPILE  wcscasecmp.o
+    COMPILE  tolower.o
+[00;33m  Library [0mlibc-inet
+    COMPILE  inet_addr.o
+    COMPILE  drand48.o
+    COMPILE  toupper.o
+    COMPILE  getw.o
+    COMPILE  erand48.o
+    COMPILE  remque.o
+    COMPILE  getwc.o
+    COMPILE  wcscat.o
+    COMPILE  err.o
+    COMPILE  utf8.o
+    COMPILE  strfmon.o
+    COMPILE  getwchar.o
+    COMPILE  inet_cidr_ntop.o
+    COMPILE  wcschr.o
+    COMPILE  makebuf.o
+    COMPILE  wcscmp.o
+    COMPILE  wcscpy.o
+    COMPILE  errlst.o
+    COMPILE  wcrtomb.o
+    COMPILE  gethex.o
+    COMPILE  wcscspn.o
+    COMPILE  errno.o
+    COMPILE  mktemp.o
+    COMPILE  exec.o
+    COMPILE  inet_cidr_pton.o
+    COMPILE  wcsftime.o
+    COMPILE  wcsdup.o
+    COMPILE  wcsnrtombs.o
+    COMPILE  wcslcat.o
+    COMPILE  perror.o
+    COMPILE  fdevname.o
+    COMPILE  strtoimax.o
+    COMPILE  flt_rounds.o
+    COMPILE  glue.o
+    COMPILE  printf-pos.o
+    COMPILE  gmisc.o
+    COMPILE  wcslcpy.o
+    COMPILE  wcsrtombs.o
+    COMPILE  strtol.o
+    COMPILE  fmtcheck.o
+    COMPILE  inet_lnaof.o
+    COMPILE  hd_init.o
+    COMPILE  inet_makeaddr.o
+    COMPILE  wcslen.o
+    COMPILE  wcstod.o
+    COMPILE  strtoll.o
+    COMPILE  fmtmsg.o
+    COMPILE  inet_net_ntop.o
+    COMPILE  hexnan.o
+    COMPILE  wcstof.o
+    COMPILE  wcsncasecmp.o
+    COMPILE  strtonum.o
+    COMPILE  wcsncat.o
+    COMPILE  fnmatch.o
+    COMPILE  wcsncmp.o
+    COMPILE  wcstoimax.o
+    COMPILE  inet_net_pton.o
+    COMPILE  strtoq.o
+    COMPILE  machdep_ldisd.o
+    COMPILE  wcstol.o
+    COMPILE  misc.o
+    COMPILE  wcsncpy.o
+    COMPILE  strtoul.o
+    COMPILE  wcstold.o
+    COMPILE  printf.o
+    COMPILE  wcsnlen.o
+    COMPILE  wcstoll.o
+    COMPILE  fpclassify.o
+    COMPILE  wcspbrk.o
+    COMPILE  strtoull.o
+    COMPILE  inet_neta.o
+    COMPILE  putc.o
+    COMPILE  wcstombs.o
+    COMPILE  wcsrchr.o
+    COMPILE  inet_netof.o
+    COMPILE  strtoumax.o
+    COMPILE  wcstoul.o
+    COMPILE  fpgetmask.o
+    COMPILE  putchar.o
+    COMPILE  wcsspn.o
+    COMPILE  smisc.o
+    COMPILE  fpgetprec.o
+    COMPILE  inet_network.o
+    COMPILE  strtouq.o
+    COMPILE  wcstoull.o
+    COMPILE  puts.o
+    COMPILE  wcsstr.o
+    COMPILE  fpgetround.o
+    COMPILE  wcstok.o
+    COMPILE  putw.o
+    COMPILE  wcstoumax.o
+    COMPILE  system.o
+    COMPILE  fpgetsticky.o
+    COMPILE  inet_ntoa.o
+    COMPILE  strtoIQ.o
+    COMPILE  wcswidth.o
+    COMPILE  wctob.o
+    COMPILE  putwc.o
+    COMPILE  tdelete.o
+    COMPILE  fpsetmask.o
+    COMPILE  wmemchr.o
+    COMPILE  strtoId.o
+    COMPILE  inet_ntop.o
+    COMPILE  tfind.o
+    COMPILE  wctomb.o
+    COMPILE  fpsetprec.o
+    COMPILE  strtoIdd.o
+    COMPILE  wmemcmp.o
+    COMPILE  putwchar.o
+    COMPILE  tsearch.o
+    COMPILE  wctrans.o
+    COMPILE  fpsetround.o
+    COMPILE  strtoIf.o
+    COMPILE  twalk.o
+    COMPILE  inet_pton.o
+    COMPILE  wctype.o
+    COMPILE  wmemcpy.o
+    COMPILE  strtoIg.o
+    MERGE    libc-stdlib.lib.a
+    COMPILE  fstab.o
+    COMPILE  refill.o
+    COMPILE  wcwidth.o
+    COMPILE  wmemmove.o
+    COMPILE  strtoIx.o
+    MERGE    libc-locale.lib.a
+    COMPILE  remove.o
+    COMPILE  rewind.o
+    COMPILE  nsap_addr.o
+    COMPILE  wmemset.o
+    COMPILE  strtoIxL.o
+    MERGE    libc-string.lib.a
+[00;33m  Library [0mlibc-stdtime
+    COMPILE  difftime.o
+    COMPILE  asctime.o
+    COMPILE  rget.o
+    COMPILE  strtod.o
+    MERGE    libc-inet.lib.a
+    COMPILE  ftok.o
+    COMPILE  localtime.o
+    COMPILE  scanf.o
+[00;33m  Library [0mlibc-regex
+    COMPILE  setbuf.o
+    COMPILE  regcomp.o
+    COMPILE  strftime.o
+[00;33m  Library [0mlibc-compat
+    COMPILE  creat.o
+    COMPILE  fts-compat.o
+    COMPILE  gethostid.o
+    COMPILE  setbuffer.o
+    COMPILE  getwd.o
+    COMPILE  setvbuf.o
+    COMPILE  killpg.o
+    COMPILE  strtodI.o
+    COMPILE  sethostid.o
+    COMPILE  setpgrp.o
+    COMPILE  snprintf.o
+    COMPILE  setrgid.o
+    COMPILE  setruid.o
+    COMPILE  strtodg.o
+    COMPILE  regerror.o
+    COMPILE  sprintf.o
+    COMPILE  sigcompat.o
+    COMPILE  regexec.o
+    COMPILE  sscanf.o
+    MERGE    libc-compat.lib.a
+    COMPILE  stdio.o
+    COMPILE  fts.o
+[00;33m  Library [0mlibc-setjmp
+    COMPILE  _setjmp.o
+    COMPILE  swprintf.o
+    COMPILE  strptime.o
+    COMPILE  swscanf.o
+    COMPILE  setjmp.o
+    COMPILE  strtof.o
+    MERGE    libc-setjmp.lib.a
+    COMPILE  tempnam.o
+    COMPILE  strtopQ.o
+    COMPILE  regfree.o
+    COMPILE  ftw.o
+    COMPILE  getbootfile.o
+    COMPILE  strtopd.o
+[00;33m  Library [0mlibc-mem
+    COMPILE  tmpfile.o
+    COMPILE  libc_mem_alloc.o
+    COMPILE  getbsize.o
+    COMPILE  getcap.o
+    COMPILE  getcwd.o
+    COMPILE  tmpnam.o
+    COMPILE  time32.o
+    COMPILE  strtopdd.o
+    COMPILE  ungetc.o
+    COMPILE  timelocal.o
+    COMPILE  getdomainname.o
+    COMPILE  ungetwc.o
+    COMPILE  getgrent.o
+    COMPILE  vasprintf.o
+    MERGE    libc-stdtime.lib.a
+    COMPILE  vdprintf.o
+    COMPILE  strtopf.o
+    COMPILE  drivers/net/eepro100.o
+    COMPILE  vfprintf.o
+[00;33m  Library [0mlibc-resolv
+    COMPILE  strtopx.o
+    MERGE    libc-mem.lib.a
+    COMPILE  h_errno.o
+    COMPILE  strtopxL.o
+    COMPILE  herror.o
+    COMPILE  strtorQ.o
+[00;33m  Library [0mlibc-isc
+    COMPILE  ev_streams.o
+    COMPILE  ev_timers.o
+    COMPILE  mtctxres.o
+    COMPILE  strtord.o
+    COMPILE  getgrouplist.o
+    COMPILE  gethostname.o
+    COMPILE  res_comp.o
+    MERGE    libc-isc.lib.a
+    COMPILE  getloadavg.o
+    COMPILE  drivers/net/intel.o
+    COMPILE  strtordd.o
+    COMPILE  getlogin.o
+    MERGE    libc-regex.lib.a
+    COMPILE  getmntinfo.o
+[00;33m  Library [0mlibc-nameser
+    COMPILE  res_data.o
+    COMPILE  strtorf.o
+[00;33m  Library [0mlibc-net
+    COMPILE  ns_name.o
+    COMPILE  getnetgrent.o
+    COMPILE  base64.o
+    COMPILE  getaddrinfo.o
+    COMPILE  res_debug.o
+    COMPILE  drivers/net/mii.o
+    COMPILE  strtorx.o
+    COMPILE  getpagesize.o
+    COMPILE  getpeereid.o
+    COMPILE  ns_netint.o
+    COMPILE  strtorxL.o
+    COMPILE  getprogname.o
+    COMPILE  drivers/net/realtek.o
+    COMPILE  getttyent.o
+    COMPILE  ns_parse.o
+    COMPILE  sum.o
+    COMPILE  ns_print.o
+    COMPILE  ulp.o
+    COMPILE  getusershell.o
+    COMPILE  ns_samedomain.o
+    MERGE    libc-gdtoa.lib.a
+    COMPILE  glob.o
+    COMPILE  drivers/net/tg3/tg3.o
+    COMPILE  vfscanf.o
+    COMPILE  ns_ttl.o
+    COMPILE  vfwprintf.o
+    COMPILE  res_findzonecut.o
+    COMPILE  gethostbydns.o
+    COMPILE  drivers/net/tg3/tg3_phy.o
+    MERGE    libc-nameser.lib.a
+    COMPILE  drivers/net/tg3/tg3_hw.o
+    COMPILE  infinity.o
+    COMPILE  initgroups.o
+    COMPILE  isatty.o
+    COMPILE  isinf.o
+    COMPILE  isnan.o
+    COMPILE  jrand48.o
+    COMPILE  lcong48.o
+    COMPILE  gethostbyht.o
+    COMPILE  res_init.o
+    COMPILE  ldexp.o
+[00;33m  Library [0mlibc-rpc
+    COMPILE  bindresvport.o
+    COMPILE  gethostnamadr.o
+    COMPILE  vfwscanf.o
+    COMPILE  lockf.o
+    COMPILE  res_mkquery.o
+    COMPILE  lrand48.o
+    MERGE    libc-rpc.lib.a
+    COMPILE  mrand48.o
+    COMPILE  makecontext.o
+    COMPILE  nftw.o
+    COMPILE  nice.o
+    COMPILE  getnameinfo.o
+    COMPILE  res_mkupdate.o
+    COMPILE  nlist.o
+    COMPILE  getprotoent.o
+    COMPILE  nrand48.o
+    COMPILE  getprotoname.o
+    COMPILE  pause.o
+    COMPILE  opendir.o
+    COMPILE  vprintf.o
+    COMPILE  vscanf.o
+    COMPILE  getservent.o
+    COMPILE  drivers/nvs/nvs.o
+    COMPILE  vsprintf.o
+    COMPILE  pmadvise.o
+    COMPILE  vsscanf.o
+    COMPILE  vsnprintf.o
+    COMPILE  vswprintf.o
+    COMPILE  vswscanf.o
+    COMPILE  drivers/nvs/threewire.o
+    COMPILE  vwprintf.o
+    COMPILE  popen.o
+    COMPILE  vwscanf.o
+    COMPILE  net/eth_slow.o
+    COMPILE  dummies.o
+    COMPILE  wbuf.o
+    COMPILE  net/ethernet.o
+    COMPILE  net/iobpad.o
+    COMPILE  posix_spawn.o
+    COMPILE  wprintf.o
+    COMPILE  wscanf.o
+    COMPILE  net/netdevice.o
+    COMPILE  res_query.o
+    COMPILE  net/nullnet.o
+    COMPILE  wsetup.o
+    COMPILE  res_send.o
+    COMPILE  nic.o
+    COMPILE  xprintf.o
+    COMPILE  psignal.o
+    COMPILE  map_v4v6.o
+    COMPILE  pw_scan.o
+    COMPILE  name6.o
+    COMPILE  res_state.o
+    COMPILE  res_update.o
+    COMPILE  raise.o
+    COMPILE  nsdispatch.o
+    COMPILE  pwcache.o
+    COMPILE  xprintf_errno.o
+    CONVERT  nslexer.c
+    COMPILE  readdir.o
+    CONVERT  nsparser.c
+    MERGE    dde_ipxe_nic.lib.a
+    COMPILE  readpassphrase.o
+    COMPILE  xprintf_float.o
+    COMPILE  xprintf_hexdump.o
+[00;33m  Library [0mbase-nova-common
+    COMPILE  vars.o
+    COMPILE  allocator_avl.o
+[00;33m  Library [0mld
+    CONVERT  ld.symbols.s
+    COMPILE  avl_tree.o
+    COMPILE  rewinddir.o
+    ASSEMBLE ld.symbols.o
+    COMPILE  nslexer.o
+    COMPILE  xprintf_int.o
+    MERGE    ld.abi.so
+    MERGE    libc-resolv.lib.a
+    COMPILE  xprintf_quote.o
+    COMPILE  scandir.o
+    COMPILE  cap_map.o
+    COMPILE  xprintf_str.o
+    COMPILE  xprintf_time.o
+    COMPILE  seed48.o
+    COMPILE  seekdir.o
+    COMPILE  semctl.o
+    COMPILE  xprintf_vis.o
+    COMPILE  capability.o
+    COMPILE  setdomainname.o
+    COMPILE  child_process.o
+    COMPILE  child.o
+    MERGE    libc-stdio.lib.a
+    COMPILE  nsparser.o
+    COMPILE  sethostname.o
+    COMPILE  component.o
+    COMPILE  setjmperr.o
+[00;33m  Library [0mbase
+    COMPILE  console.o
+    MERGE    base.lib.a
+    COMPILE  setmode.o
+    COMPILE  setprogname.o
+    COMPILE  siginterrupt.o
+    MERGE    libc-net.lib.a
+    COMPILE  siglist.o
+    COMPILE  elf_binary.o
+    COMPILE  entrypoint.o
+    COMPILE  signal.o
+    COMPILE  signalcontext.o
+[01;33m  Program [0mdrivers/acpi/spec/x86/acpi_drv
+    COMPILE  acpi.o
+    COMPILE  sigsetjmp.o
+    COMPILE  sigsetops.o
+    COMPILE  main.o
+    COMPILE  sleep.o
+    COMPILE  srand48.o
+    COMPILE  statvfs.o
+    COMPILE  stringlist.o
+    COMPILE  strtofflags.o
+    COMPILE  swapcontext.o
+[01;33m  Program [0mdrivers/nic/nic_drv
+    COMPILE  main.o
+    COMPILE  sysctl.o
+    COMPILE  sysctlnametomib.o
+    COMPILE  syslog.o
+    COMPILE  telldir.o
+    COMPILE  termios.o
+    COMPILE  time.o
+    COMPILE  times.o
+[00;33m  Library [0mlxip_include
+    MERGE    lxip_include.lib.a
+    COMPILE  timezone.o
+    COMPILE  tls.o
+    COMPILE  ttyname.o
+    COMPILE  env_session_id_space.o
+    COMPILE  ttyslot.o
+    COMPILE  ualarm.o
+    COMPILE  ulimit.o
+    COMPILE  uname.o
+    COMPILE  unvis.o
+    COMPILE  usleep.o
+    COMPILE  heap.o
+    COMPILE  utime.o
+    COMPILE  vis.o
+    COMPILE  wait.o
+    COMPILE  wait3.o
+    COMPILE  waitpid.o
+    COMPILE  wordexp.o
+    COMPILE  ipc.o
+    COMPILE  lock.o
+    MERGE    libc-gen.lib.a
+[01;33m  Program [0mdrivers/platform/spec/x86/platform_drv
+    COMPILE  device_pd.o
+    COMPILE  irq.o
+    COMPILE  main.o
+    COMPILE  log.o
+    COMPILE  output.o
+    COMPILE  raw_output.o
+    COMPILE  region_map_client.o
+    COMPILE  registry.o
+    COMPILE  rm_session_client.o
+    COMPILE  root_proxy.o
+    COMPILE  rpc_entrypoint.o
+[01;33m  Program [0mdrivers/timer/nova/nova_timer_drv
+    COMPILE  main.o
+    COMPILE  session_state.o
+    LINK     nic_drv
+    COMPILE  nonpci_devices.o
+[01;33m  Program [0mdrivers/timer/pit/pit_timer_drv
+    COMPILE  main.o
+    LINK     acpi_drv
+[01;33m  Program [0minit/init
+    COMPILE  child.o
+    COMPILE  nova/time_source.o
+    COMPILE  signal_common.o
+    COMPILE  signal_transmitter.o
+    COMPILE  slab.o
+    COMPILE  sleep.o
+    COMPILE  sliced_heap.o
+    COMPILE  stack.o
+    COMPILE  pci_device.o
+    COMPILE  stack_allocator.o
+    COMPILE  stack_area_addr.o
+    COMPILE  thread.o
+    COMPILE  thread_myself.o
+    COMPILE  trace.o
+    COMPILE  time_source.o
+    COMPILE  session.o
+    COMPILE  main.o
+    MERGE    base-nova-common.lib.a
+    LINK     pit_timer_drv
+[00;33m  Library [0mvfs
+    COMPILE  file_system_factory.o
+[01;33m  Program [0mserver/report_rom/report_rom
+    COMPILE  main.o
+[00;33m  Library [0mlxip
+    CONVERT  vfs.symbols.s
+    ASSEMBLE vfs.symbols.o
+    LINK     nova_timer_drv
+    MERGE    vfs.abi.so
+    COMPILE  server.o
+    COMPILE  driver.o
+[00;33m  Library [0mcore-nova
+    COMPILE  bios_data_area.o
+    COMPILE  drivers/net/loopback.o
+    COMPILE  core_log.o
+    COMPILE  core_log_out.o
+    COMPILE  core_mem_alloc.o
+    COMPILE  dummies.o
+    COMPILE  core_region_map.o
+    COMPILE  dummies_c.o
+    LINK     platform_drv
+    COMPILE  core_rpc_cap_alloc.o
+    COMPILE  env.o
+    COMPILE  lib/checksum.o
+    COMPILE  lib/rhashtable.o
+    COMPILE  cpu_session_component.o
+    COMPILE  lxc_emul.o
+    COMPILE  lxcc_emul.o
+    COMPILE  cpu_session_support.o
+    COMPILE  malloc.o
+    COMPILE  net/802/p8023.o
+    LINK     report_rom
+    COMPILE  cpu_thread_component.o
+    COMPILE  net/core/datagram.o
+    COMPILE  net/core/dev.o
+    COMPILE  net/core/dev_addr_lists.o
+    LINK     init
+    COMPILE  net/core/dst.o
+In file included from [01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/pkt_sched.h:7:0[m[K,
+                 from [01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/dev.c:103[m[K:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:[m[K In function ‘[01m[Kbstats_cpu_update[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:524:25:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Ku64_stats_update_begin[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  u64_stats_update_begin([01;35m[K&[m[Kbstats->syncp);
+                         [01;35m[K^[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2220:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct u64_stats_sync *[m[K’ but argument is of type ‘[01m[Kunsigned int *[m[K’
+ void [01;36m[Ku64_stats_update_begin[m[K(struct u64_stats_sync *syncp);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/pkt_sched.h:7:0[m[K,
+                 from [01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/dev.c:103[m[K:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:525:16:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kbstats_update[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  bstats_update([01;35m[K&[m[Kbstats->bstats, skb);
+                [01;35m[K^[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:514:20:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct gnet_stats_basic_packed *[m[K’ but argument is of type ‘[01m[Kunsigned int *[m[K’
+ static inline void [01;36m[Kbstats_update[m[K(struct gnet_stats_basic_packed *bstats,
+                    [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:526:23:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Ku64_stats_update_end[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  u64_stats_update_end([01;35m[K&[m[Kbstats->syncp);
+                       [01;35m[K^[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2221:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct u64_stats_sync *[m[K’ but argument is of type ‘[01m[Kunsigned int *[m[K’
+ void [01;36m[Ku64_stats_update_end[m[K(struct u64_stats_sync *syncp);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+    COMPILE  dataspace_component.o
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2824:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kipv6_get_dsfield[m[K’ used but never defined
+ static inline __u8 [01;35m[Kipv6_get_dsfield[m[K(const struct ipv6hdr *ipv6h);
+                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+    COMPILE  net/core/ethtool.o
+    COMPILE  net/core/neighbour.o
+    COMPILE  net/core/request_sock.o
+    COMPILE  net/core/skbuff.o
+In file included from [01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:244:0[m[K,
+                 from [01m[K<command-line>:0[m[K:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/neighbour.c:[m[K In function ‘[01m[Kneigh_table_init[m[K’:
+[01m[K/home/devuan/genode/repos/dde_linux/src/include/lx_emul/bug.h:24:21:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[KN[m[K’ in format [[01;35m[K-Wformat=[m[K]
+  if (ret) lx_printf([01;35m[K"[m[K[%s] WARN_ON(" #condition ") \n", __func__); \
+                     [01;35m[K^[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/neighbour.c:1531:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWARN_ON[m[K’
+   [01;36m[KWARN_ON[m[K(tbl->entry_size % NEIGH_PRIV_ALIGN);
+   [01;36m[K^~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/neighbour.c:[m[K In function ‘[01m[Kneigh_init[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/neighbour.c:3212:41:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_UNSPEC, RTM_NEWNEIGH, [01;35m[Kneigh_add[m[K, NULL, NULL);
+                                         [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/neighbour.c:3213:41:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_UNSPEC, RTM_DELNEIGH, [01;35m[Kneigh_delete[m[K, NULL, NULL);
+                                         [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/core/neighbour.c:3218:44:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_UNSPEC, RTM_SETNEIGHTBL, [01;35m[Kneightbl_set[m[K, NULL, NULL);
+                                            [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+    COMPILE  net/core/sock.o
+    COMPILE  default_log.o
+    COMPILE  net/core/stream.o
+    COMPILE  dump_alloc.o
+    COMPILE  echo.o
+    COMPILE  io_mem_session_component.o
+    COMPILE  net/core/utils.o
+    COMPILE  net/ethernet/eth.o
+    COMPILE  io_mem_session_support.o
+    COMPILE  io_port_session_component.o
+    COMPILE  net/ipv4/af_inet.o
+    COMPILE  net/ipv4/arp.o
+    COMPILE  net/ipv4/datagram.o
+    COMPILE  net/ipv4/devinet.o
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2824:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kipv6_get_dsfield[m[K’ used but never defined
+ static inline __u8 [01;35m[Kipv6_get_dsfield[m[K(const struct ipv6hdr *ipv6h);
+                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2374:20:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  .fill_link_af   = [01;35m[Kinet_fill_link_af[m[K,
+                    [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2374:20:[m[K [01;36m[Knote: [m[K(near initialization for ‘[01m[Kinet_af_ops.fill_link_af[m[K’)
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2375:22:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  .get_link_af_size = [01;35m[Kinet_get_link_af_size[m[K,
+                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2375:22:[m[K [01;36m[Knote: [m[K(near initialization for ‘[01m[Kinet_af_ops.get_link_af_size[m[K’)
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:[m[K In function ‘[01m[Kdevinet_init[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2396:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_INET, RTM_NEWADDR, [01;35m[Kinet_rtm_newaddr[m[K, NULL, NULL);
+                                      [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2397:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_INET, RTM_DELADDR, [01;35m[Kinet_rtm_deladdr[m[K, NULL, NULL);
+                                      [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/devinet.c:2399:41:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_INET, RTM_GETNETCONF, [01;35m[Kinet_netconf_get_devconf[m[K,
+                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+    COMPILE  net/ipv4/fib_frontend.o
+    COMPILE  net/ipv4/fib_semantics.o
+    COMPILE  io_port_session_support.o
+    COMPILE  net/ipv4/fib_trie.o
+    COMPILE  ipc_pager.o
+    COMPILE  net/ipv4/icmp.o
+    COMPILE  irq_session_component.o
+    COMPILE  main.o
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_frontend.c:[m[K In function ‘[01m[Kip_fib_init[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_frontend.c:1308:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_INET, RTM_NEWROUTE, [01;35m[Kinet_rtm_newroute[m[K, NULL, NULL);
+                                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_frontend.c:1309:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_INET, RTM_DELROUTE, [01;35m[Kinet_rtm_delroute[m[K, NULL, NULL);
+                                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_trie.c:[m[K In function ‘[01m[Kfib_table_lookup[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_trie.c:1282:25:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Ktrace_fib_table_lookup[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  trace_fib_table_lookup([01;35m[Ktb[m[K->tb_id, flp);
+                         [01;35m[K^~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:3417:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid *[m[K’ but argument is of type ‘[01m[Ku32 {aka unsigned int}[m[K’
+ void [01;36m[Ktrace_fib_table_lookup[m[K(void*, void*);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_trie.c:1282:36:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Ktrace_fib_table_lookup[m[K’ discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  trace_fib_table_lookup(tb->tb_id, [01;35m[Kflp[m[K);
+                                    [01;35m[K^~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:3417:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid *[m[K’ but argument is of type ‘[01m[Kconst struct flowi4 *[m[K’
+ void [01;36m[Ktrace_fib_table_lookup[m[K(void*, void*);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/fib_trie.c:1448:30:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Ktrace_fib_table_lookup_nh[m[K’ discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+    trace_fib_table_lookup_nh([01;35m[Knh[m[K);
+                              [01;35m[K^~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:3418:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid *[m[K’ but argument is of type ‘[01m[Kconst struct fib_nh *[m[K’
+ void [01;36m[Ktrace_fib_table_lookup_nh[m[K(void*);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+    COMPILE  net/ipv4/inet_connection_sock.o
+    COMPILE  net/ipv4/inet_fragment.o
+    COMPILE  net/ipv4/inet_hashtables.o
+    COMPILE  net/ipv4/inetpeer.o
+    COMPILE  net/ipv4/ip_forward.o
+    COMPILE  net/ipv4/ip_fragment.o
+    COMPILE  native_cpu_component.o
+    COMPILE  net/ipv4/ip_input.o
+    COMPILE  net/ipv4/ip_options.o
+    COMPILE  net/ipv4/ip_output.o
+    MERGE    vfs.lib.so
+    COMPILE  net/ipv4/ip_sockglue.o
+    COMPILE  net/ipv4/ipconfig.o
+    COMPILE  net/ipv4/ping.o
+    COMPILE  net/ipv4/protocol.o
+    COMPILE  net/ipv4/raw.o
+[00;33m  Library [0mlibc
+    COMPILE  atexit.o
+    COMPILE  net/ipv4/route.o
+    COMPILE  dummies.o
+    COMPILE  net/ipv4/tcp.o
+    COMPILE  net/ipv4/tcp_cong.o
+    COMPILE  net/ipv4/tcp_cubic.o
+    COMPILE  dynamic_linker.o
+    COMPILE  net/ipv4/tcp_diag.o
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/route.c:[m[K In function ‘[01m[Kip_rt_init[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/route.c:2850:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krtnl_register[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  rtnl_register(PF_INET, RTM_GETROUTE, [01;35m[Kinet_rtm_getroute[m[K, NULL, NULL);
+                                       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2078:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krtnl_doit_func {aka int (*)(struct sk_buff *, struct nlmsghdr *, void *)}[m[K’ but argument is of type ‘[01m[Kint (*)(struct sk_buff *, struct nlmsghdr *)[m[K’
+ void [01;36m[Krtnl_register[m[K(int protocol, int msgtype,
+      [01;36m[K^~~~~~~~~~~~~[m[K
+    COMPILE  environ.o
+    COMPILE  net/ipv4/tcp_input.o
+    COMPILE  net/ipv4/tcp_ipv4.o
+    COMPILE  errno.o
+    COMPILE  native_pd_component.o
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:[m[K In function ‘[01m[Ktcp_diag_dump[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:40:46:[m[K [01;35m[Kwarning: [m[Kpassing argument 4 of ‘[01m[Kinet_diag_dump_icsk[m[K’ discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  inet_diag_dump_icsk(&tcp_hashinfo, skb, cb, [01;35m[Kr[m[K, bc);
+                                              [01;35m[K^[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:3047:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct inet_diag_req_v2 *[m[K’ but argument is of type ‘[01m[Kconst struct inet_diag_req_v2 *[m[K’
+ void [01;36m[Kinet_diag_dump_icsk[m[K(struct inet_hashinfo *, struct sk_buff *,
+      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:[m[K In function ‘[01m[Ktcp_diag_dump_one[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:46:61:[m[K [01;35m[Kwarning: [m[Kpassing argument 4 of ‘[01m[Kinet_diag_dump_one_icsk[m[K’ discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  return inet_diag_dump_one_icsk(&tcp_hashinfo, in_skb, nlh, [01;35m[Kreq[m[K);
+                                                             [01;35m[K^~~[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:3050:5:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct inet_diag_req_v2 *[m[K’ but argument is of type ‘[01m[Kconst struct inet_diag_req_v2 *[m[K’
+ int [01;36m[Kinet_diag_dump_one_icsk[m[K(struct inet_hashinfo *, struct sk_buff *,
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:[m[K At top level:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:50:12:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  .dump   = [01;35m[Ktcp_diag_dump[m[K,
+            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:50:12:[m[K [01;36m[Knote: [m[K(near initialization for ‘[01m[Ktcp_diag_handler.dump[m[K’)
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:51:15:[m[K [01;35m[Kwarning: [m[Kinitialization from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  .dump_one  = [01;35m[Ktcp_diag_dump_one[m[K,
+               [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/ipv4/tcp_diag.c:51:15:[m[K [01;36m[Knote: [m[K(near initialization for ‘[01m[Ktcp_diag_handler.dump_one[m[K’)
+    COMPILE  exit.o
+    COMPILE  net/ipv4/tcp_minisocks.o
+    COMPILE  pager.o
+    COMPILE  fd_alloc.o
+    COMPILE  pd_session_component.o
+    COMPILE  file_operations.o
+    COMPILE  net/ipv4/tcp_output.o
+    COMPILE  net/ipv4/tcp_timer.o
+    COMPILE  net/ipv4/udp.o
+    COMPILE  pd_session_support.o
+    COMPILE  platform.o
+    COMPILE  net/netlink/af_netlink.o
+    COMPILE  net/sched/sch_generic.o
+In file included from [01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/sched/sch_generic.c:29:0[m[K:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:[m[K In function ‘[01m[Kbstats_cpu_update[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:524:25:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Ku64_stats_update_begin[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  u64_stats_update_begin([01;35m[K&[m[Kbstats->syncp);
+                         [01;35m[K^[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2220:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct u64_stats_sync *[m[K’ but argument is of type ‘[01m[Kunsigned int *[m[K’
+ void [01;36m[Ku64_stats_update_begin[m[K(struct u64_stats_sync *syncp);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/sched/sch_generic.c:29:0[m[K:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:525:16:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kbstats_update[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  bstats_update([01;35m[K&[m[Kbstats->bstats, skb);
+                [01;35m[K^[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:514:20:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct gnet_stats_basic_packed *[m[K’ but argument is of type ‘[01m[Kunsigned int *[m[K’
+ static inline void [01;36m[Kbstats_update[m[K(struct gnet_stats_basic_packed *bstats,
+                    [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/include/net/sch_generic.h:526:23:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Ku64_stats_update_end[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  u64_stats_update_end([01;35m[K&[m[Kbstats->syncp);
+                       [01;35m[K^[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:2221:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct u64_stats_sync *[m[K’ but argument is of type ‘[01m[Kunsigned int *[m[K’
+ void [01;36m[Ku64_stats_update_end[m[K(struct u64_stats_sync *syncp);
+      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+    COMPILE  nic_handler.o
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/sched/sch_generic.c:[m[K In function ‘[01m[Kqdisc_destroy[m[K’:
+[01m[K/home/devuan/genode/contrib/dde_linux-e124b91dec837347bbc7af31ac7eb488ab8c171b/src/lib/lxip/net/sched/sch_generic.c:682:37:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kgen_kill_estimator[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  gen_kill_estimator(&qdisc->bstats, [01;35m[K&[m[Kqdisc->rate_est);
+                                     [01;35m[K^[m[K
+In file included from [01m[K<command-line>:0:0[m[K:
+[01m[K/home/devuan/genode/repos/dde_linux/src/lib/lxip/include/lx_emul.h:3324:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct gnet_stats_rate_est *[m[K’ but argument is of type ‘[01m[Kstruct gnet_stats_rate_est64 *[m[K’
+ void [01;36m[Kgen_kill_estimator[m[K(struct gnet_stats_basic_packed *,
+      [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+    COMPILE  printf.o
+    COMPILE  random.o
+    COMPILE  socket_handler.o
+    COMPILE  gai_strerror.o
+    COMPILE  issetugid.o
+    COMPILE  libc_pdbg.o
+    COMPILE  malloc.o
+    COMPILE  platform_pd.o
+    COMPILE  platform_rom_modules.o
+    COMPILE  nanosleep.o
+    COMPILE  plugin.o
+    COMPILE  timer_handler.o
+    COMPILE  platform_services.o
+    COMPILE  plugin_registry.o
+    COMPILE  poll.o
+    COMPILE  pread_pwrite.o
+    COMPILE  progname.o
+    COMPILE  readv_writev.o
+    COMPILE  rlimit.o
+    COMPILE  rtc.o
+    COMPILE  select.o
+    COMPILE  signal.o
+    COMPILE  platform_thread.o
+    COMPILE  ram_dataspace_factory.o
+    COMPILE  socket_fs_plugin.o
+    COMPILE  socket_operations.o
+    COMPILE  ram_dataspace_support.o
+    COMPILE  region_map_component.o
+    COMPILE  rom_session_component.o
+    COMPILE  rpc_cap_factory.o
+    MERGE    lxip.lib.so
+    COMPILE  strcoll.o
+    COMPILE  strxfrm.o
+    COMPILE  syscall.o
+    COMPILE  sysctl.o
+    COMPILE  signal_receiver.o
+    COMPILE  signal_transmitter_noinit.o
+    COMPILE  spec/x86_64/pager.o
+    COMPILE  stack_area.o
+    COMPILE  thread_start.o
+    COMPILE  task.o
+    COMPILE  trace_session_component.o
+    COMPILE  version.o
+    COMPILE  time.o
+    COMPILE  vfs_plugin.o
+    COMPILE  wcscoll.o
+    COMPILE  wcsxfrm.o
+    CONVERT  libc.symbols.s
+    ASSEMBLE libc.symbols.o
+    MERGE    libc.abi.so
+    MERGE    core-nova.lib.a
+[01;33m  Program [0mcore/nova/core
+    MERGE    libc.lib.so
+[00;33m  Library [0mposix
+    COMPILE  construct.o
+[00;33m  Library [0mlibc_lxip
+    CONVERT  posix.symbols.s
+    COMPILE  plugin.o
+    ASSEMBLE posix.symbols.o
+    MERGE    posix.abi.so
+[00;33m  Library [0mlibm
+    COMPILE  b_log.o
+    COMPILE  b_tgamma.o
+    COMPILE  e_acos.o
+    COMPILE  b_exp.o
+    COMPILE  e_acosf.o
+    COMPILE  e_acosh.o
+    COMPILE  e_acosl.o
+    COMPILE  e_acoshf.o
+    COMPILE  e_asin.o
+    COMPILE  e_asinf.o
+    COMPILE  e_atan2.o
+    COMPILE  e_asinl.o
+    COMPILE  e_atan2f.o
+    COMPILE  e_atan2l.o
+    COMPILE  e_atanh.o
+    COMPILE  e_atanhf.o
+    COMPILE  e_cosh.o
+    COMPILE  e_coshf.o
+    COMPILE  e_exp.o
+    COMPILE  e_fmod.o
+    COMPILE  e_fmodf.o
+    COMPILE  e_expf.o
+    COMPILE  e_fmodl.o
+    COMPILE  e_gamma_r.o
+    COMPILE  e_gamma.o
+    COMPILE  e_gammaf.o
+    COMPILE  e_gammaf_r.o
+    COMPILE  e_hypot.o
+    COMPILE  e_hypotl.o
+    COMPILE  e_j0.o
+    COMPILE  e_j0f.o
+    COMPILE  e_hypotf.o
+    COMPILE  e_jn.o
+    COMPILE  e_j1f.o
+    COMPILE  e_j1.o
+    COMPILE  e_jnf.o
+    COMPILE  e_lgamma.o
+    COMPILE  e_lgamma_r.o
+    COMPILE  e_lgammaf.o
+    COMPILE  e_lgammaf_r.o
+    COMPILE  e_log.o
+    COMPILE  e_log10.o
+    COMPILE  e_logf.o
+    COMPILE  e_pow.o
+    COMPILE  e_log10f.o
+    COMPILE  e_powf.o
+    COMPILE  e_remainder.o
+    COMPILE  e_remainderf.o
+    COMPILE  e_remainderl.o
+    COMPILE  e_scalb.o
+    COMPILE  e_scalbf.o
+    COMPILE  e_sinh.o
+    COMPILE  e_sqrt.o
+    COMPILE  e_sinhf.o
+    COMPILE  e_sqrtl.o
+    COMPILE  e_sqrtf.o
+    COMPILE  invtrig.o
+    COMPILE  k_cos.o
+    COMPILE  k_cosf.o
+    COMPILE  k_cosl.o
+    COMPILE  k_rem_pio2.o
+    COMPILE  k_sinf.o
+    COMPILE  k_sinl.o
+    COMPILE  k_tan.o
+    COMPILE  k_sin.o
+    COMPILE  k_tanl.o
+    COMPILE  k_tanf.o
+    COMPILE  log2.o
+    COMPILE  msun/amd64/fenv.o
+    COMPILE  s_asinh.o
+    COMPILE  s_atan.o
+    COMPILE  s_asinhf.o
+    COMPILE  s_atanf.o
+    COMPILE  s_carg.o
+    COMPILE  s_atanl.o
+    COMPILE  s_cargf.o
+    COMPILE  s_cbrt.o
+    COMPILE  s_cbrtf.o
+    COMPILE  s_ceil.o
+    COMPILE  s_cargl.o
+    COMPILE  s_cimagf.o
+    COMPILE  s_ceill.o
+    COMPILE  s_cimag.o
+    COMPILE  s_ceilf.o
+    COMPILE  s_cimagl.o
+    COMPILE  s_conjf.o
+    COMPILE  s_conj.o
+    COMPILE  s_copysignf.o
+    COMPILE  s_copysign.o
+    COMPILE  s_copysignl.o
+    COMPILE  s_conjl.o
+    COMPILE  s_cos.o
+    COMPILE  s_cosf.o
+    COMPILE  s_cosl.o
+    COMPILE  s_cprojf.o
+    COMPILE  s_cproj.o
+    COMPILE  s_cprojl.o
+    COMPILE  s_crealf.o
+    COMPILE  s_creal.o
+    COMPILE  s_csqrt.o
+    COMPILE  s_csqrtf.o
+    COMPILE  s_creall.o
+    COMPILE  s_csqrtl.o
+    COMPILE  s_erff.o
+    COMPILE  s_erf.o
+    COMPILE  s_exp2.o
+    COMPILE  s_expm1.o
+    COMPILE  s_exp2f.o
+    COMPILE  s_expm1f.o
+    COMPILE  s_fabs.o
+    COMPILE  s_fabsf.o
+    COMPILE  s_fabsl.o
+    COMPILE  s_finite.o
+    COMPILE  s_finitef.o
+    COMPILE  s_fdim.o
+    COMPILE  s_floor.o
+    COMPILE  s_floorf.o
+    COMPILE  s_fma.o
+    COMPILE  s_floorl.o
+    COMPILE  s_fmal.o
+    COMPILE  s_fmaf.o
+    COMPILE  s_fmax.o
+    COMPILE  s_fmaxf.o
+    COMPILE  s_fmaxl.o
+    COMPILE  s_fmin.o
+    COMPILE  s_fminf.o
+    COMPILE  s_fminl.o
+    COMPILE  s_frexp.o
+    COMPILE  s_frexpl.o
+    COMPILE  s_frexpf.o
+    COMPILE  s_ilogb.o
+    COMPILE  s_ilogbf.o
+    COMPILE  s_ilogbl.o
+    COMPILE  s_isnan.o
+    COMPILE  s_isfinite.o
+    COMPILE  s_isnormal.o
+    COMPILE  s_llrintf.o
+    COMPILE  s_llrint.o
+    COMPILE  s_llrintl.o
+    COMPILE  s_llroundf.o
+    COMPILE  s_llround.o
+    COMPILE  s_llroundl.o
+    COMPILE  s_log1p.o
+    COMPILE  s_log1pf.o
+    COMPILE  s_logb.o
+    COMPILE  s_logbl.o
+    COMPILE  s_logbf.o
+    COMPILE  s_lrint.o
+    COMPILE  s_lrintf.o
+    COMPILE  s_lrintl.o
+    COMPILE  s_lroundf.o
+    COMPILE  s_modf.o
+    COMPILE  s_lround.o
+    COMPILE  s_modff.o
+    COMPILE  s_lroundl.o
+    COMPILE  s_modfl.o
+    COMPILE  s_nan.o
+    COMPILE  s_nanl.o
+    COMPILE  s_nearbyint.o
+    COMPILE  s_nextafter.o
+    COMPILE  s_nextafterl.o
+    COMPILE  s_nextafterf.o
+    COMPILE  s_nexttowardf.o
+    COMPILE  s_nexttoward.o
+    COMPILE  s_remquol.o
+    COMPILE  s_remquof.o
+    COMPILE  s_remquo.o
+    COMPILE  s_rint.o
+    COMPILE  s_rintf.o
+    COMPILE  s_rintl.o
+    COMPILE  s_roundf.o
+    COMPILE  s_round.o
+    COMPILE  s_scalbln.o
+    COMPILE  s_scalbn.o
+    COMPILE  s_roundl.o
+    COMPILE  s_scalbnf.o
+    COMPILE  s_signbit.o
+    COMPILE  s_scalbnl.o
+    COMPILE  s_signgam.o
+    COMPILE  s_significand.o
+    COMPILE  s_significandf.o
+    COMPILE  s_sin.o
+    COMPILE  s_tanf.o
+    COMPILE  s_sinf.o
+    COMPILE  s_sinl.o
+    COMPILE  s_tan.o
+    COMPILE  s_tanh.o
+    COMPILE  s_tanhf.o
+    COMPILE  s_tanl.o
+    COMPILE  s_tgammaf.o
+    COMPILE  s_trunc.o
+    COMPILE  w_cabs.o
+    COMPILE  s_truncl.o
+    COMPILE  s_truncf.o
+    COMPILE  w_cabsl.o
+    COMPILE  w_cabsf.o
+    COMPILE  w_drem.o
+    CONVERT  libm.symbols.s
+    COMPILE  w_dremf.o
+    ASSEMBLE libm.symbols.o
+    MERGE    libm.abi.so
+    MERGE    libm.lib.so
+    MERGE    posix.lib.so
+    MERGE    libc_lxip.lib.a
+[01;33m  Program [0mtester_lxip/tester_lxip
+    COMPILE  ../tester/tester.o
+    LINK     tester_lxip
+make[1]: Leaving directory '/home/devuan/genode/build/x86_64'
+genode build completed
+checking configuration syntax
+  CHECK init
+building targets: kernel core/nova lib/ld/nova
+spawn make kernel core/nova lib/ld/nova
+make[1]: Entering directory '/home/devuan/genode/build/x86_64'
+checking library dependencies...
+[00;33m  Library [0malarm
+    COMPILE  alarm.o
+[00;33m  Library [0mldso-startup
+[00;33m  Library [0mstartup-nova
+[00;33m  Library [0mcxx
+[00;33m  Library [0mbase-nova-common
+    COMPILE  acpi.o
+    COMPILE  acpi_dmar.o
+    COMPILE  acpi_fadt.o
+[01;33m  Program [0mkernel/nova/hypervisor
+    COMPILE  acpi_madt.o
+    COMPILE  acpi_mcfg.o
+    COMPILE  acpi_hpet.o
+    MERGE    alarm.lib.a
+    COMPILE  acpi_rsdp.o
+    COMPILE  acpi_rsdt.o
+[00;33m  Library [0mcore-nova
+    COMPILE  version.o
+    COMPILE  acpi_table.o
+    COMPILE  bootstrap.o
+    COMPILE  avl.o
+    COMPILE  buddy.o
+    COMPILE  cmdline.o
+    MERGE    core-nova.lib.a
+    COMPILE  console.o
+    COMPILE  console_mem.o
+    COMPILE  console_serial.o
+    COMPILE  console_vga.o
+    COMPILE  counter.o
+    COMPILE  cpu.o
+[00;33m  Library [0mtimed_semaphore
+    COMPILE  timed_semaphore.o
+    COMPILE  dmar.o
+[00;33m  Library [0mtimeout
+    COMPILE  ec.o
+    COMPILE  duration.o
+    COMPILE  ec_exc.o
+    COMPILE  ec_vmx.o
+    COMPILE  ec_svm.o
+    COMPILE  timeout.o
+    COMPILE  timer_connection.o
+    COMPILE  entry.o
+    COMPILE  fpu.o
+    COMPILE  gdt.o
+    COMPILE  gsi.o
+    COMPILE  hip.o
+    COMPILE  hpet.o
+    COMPILE  hpt.o
+    COMPILE  idt.o
+    COMPILE  init.o
+    COMPILE  ioapic.o
+    COMPILE  keyb.o
+    COMPILE  timer_connection_time.o
+    COMPILE  lapic.o
+    COMPILE  mdb.o
+    COMPILE  mca.o
+    COMPILE  memory.o
+    COMPILE  mtrr.o
+    COMPILE  oom.o
+    COMPILE  pci.o
+    COMPILE  pd.o
+    COMPILE  pt.o
+    MERGE    timed_semaphore.lib.a
+[01;33m  Program [0mcore/nova/core
+    COMPILE  pte.o
+    COMPILE  rcu.o
+    COMPILE  regs.o
+    COMPILE  timer_connection_timestamp.o
+    COMPILE  sc.o
+    COMPILE  si.o
+    COMPILE  slab.o
+    COMPILE  space_mem.o
+    COMPILE  sm.o
+    COMPILE  space_obj.o
+    COMPILE  start.o
+    COMPILE  space_pio.o
+    COMPILE  string.o
+    MERGE    timeout.lib.a
+    COMPILE  svm.o
+[00;33m  Library [0mbase-nova
+    COMPILE  syscall.o
+    COMPILE  cache.o
+    COMPILE  timeout.o
+    COMPILE  default_log.o
+    COMPILE  env_deprecated.o
+    COMPILE  timeout_hypercall.o
+    COMPILE  timeout_budget.o
+    COMPILE  tss.o
+    COMPILE  utcb.o
+    COMPILE  vmx.o
+    COMPILE  env_reinit.o
+    COMPILE  log_console.o
+    COMPILE  vtlb.o
+    COMPILE  main_thread_cap.o
+    COMPILE  rpc_cap_alloc.o
+    COMPILE  signal.o
+    COMPILE  stack_area.o
+    COMPILE  thread_start.o
+    LINK     hypervisor
+    MERGE    base-nova.lib.a
+[00;33m  Library [0mld-nova
+    COMPILE  dependency.o
+    COMPILE  exception.o
+    COMPILE  debug.o
+    ASSEMBLE jmp_slot.o
+    COMPILE  shared_object.o
+    COMPILE  test.o
+    COMPILE  main.o
+    CONVERT  symbol.map
+    CONVERT  ld-nova.symbols.s
+    ASSEMBLE ld-nova.symbols.o
+    MERGE    ld-nova.abi.so
+    MERGE    ld-nova.lib.so
+[01;33m  Program [0mlib/ld/nova/ld-nova
+make[1]: Leaving directory '/home/devuan/genode/build/x86_64'
+genode build completed
+using 'core-nova.o' as 'core.o'
+using 'ld-nova.lib.so' as 'ld.lib.so'
+using 'nova_timer_drv' as 'timer'
+install bootloader
+creating ISO image...
+xorriso 1.4.6 : RockRidge filesystem manipulator, libburnia project.
+
+spawn qemu-system-x86_64 -no-kvm -display sdl -cpu core2duo -net nic,model=e1000 -net user -redir tcp:5555::80 -nographic -serial mon:stdio -m 512 -cdrom var/run/tester_lxip.iso -machine q35
+qemu-system-x86_64: -redir tcp:5555::80: The -redir option is deprecated. Please use '-netdev user,hostfwd=...' instead.
+Bender: Hello World.
+framebuffer at [fd000000+fd12c000) 640x480@32
+framebuffer at [fd000000+fd12c000) 640x480@32
+NOVA Microhypervisor v7-8467625 (x86_64): Jul 15 2018 13:36:58 [gcc 6.3.0] [MBI2]
+
+[ 0] TSC:3205219 kHz BUS:1003517 kHz (measured)
+[ 0] CORE:0:0:0 6:f:b:0 [0] Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz
+Hypervisor reports 1x1 CPU [0m
+[34mWarning: CPU has no invariant TSC.[0m
+CPU ID (genode->kernel:package:core:thread) remapping[0m
+ remap (0->0:0:0:0) boot cpu[0m
+Hypervisor info page contains 12 memory descriptors:[0m
+core     image  [0000000000100000,0000000000804000)[0m
+binaries region [0000000000280000,0000000000804000) free for reuse[0m
+detected physical memory: 0x0000000000000000 - size: 0x000000000009fc00[0m
+use      physical memory: 0x0000000000000000 - size: 0x000000000009f000[0m
+detected physical memory: 0x0000000000100000 - size: 0x000000001fedf000[0m
+use      physical memory: 0x0000000000100000 - size: 0x000000001fedf000[0m
+detected res memory: 0x1f8d9000 - size: 0x7052f0 type=-2[0m
+detected res memory: 0x9fc00 - size: 0x400 type=2[0m
+detected res memory: 0xf0000 - size: 0x10000 type=2[0m
+detected res memory: 0x1ffdf000 - size: 0x21000 type=2[0m
+detected res memory: 0xb0000000 - size: 0x10000000 type=2[0m
+detected res memory: 0xfed1c000 - size: 0x4000 type=2[0m
+detected res memory: 0xfffc0000 - size: 0x40000 type=2[0m
+detected res memory: 0xfd000000 - size: 0x2800001e00120 type=-5[0m
+detected res memory: 0x1000000 - size: 0x2400000 type=-1[0m
+detected res memory: 0x1ffe23f3 - size: 0x0 type=-3[0m
+ROM modules:
+ ROM: [000000001fa5a000,000000001fa7a678) acpi_drv
+ ROM: [000000001ffdd000,000000001ffddded) config
+ ROM: [000000000000f000,0000000000010000) core_log
+ ROM: [000000001ff87000,000000001ffdc940) init
+ ROM: [000000001fb8c000,000000001fc70e60) ld.lib.so
+ ROM: [000000001fc71000,000000001fdcbc28) libc.lib.so
+ ROM: [000000001fdcc000,000000001fdf9fb8) libm.lib.so
+ ROM: [000000001fe67000,000000001ff86148) lxip.lib.so
+ ROM: [000000001fb12000,000000001fb67ab0) nic_drv
+ ROM: [000000001fa9b000,000000001faecf18) platform_drv
+ ROM: [000000000000d000,000000000000e000) platform_info
+ ROM: [000000001fb04000,000000001fb11d40) posix.lib.so
+ ROM: [000000001fa7b000,000000001fa9a1b8) report_rom
+ ROM: [000000001faed000,000000001fb03b40) tester_lxip
+ ROM: [000000001fb68000,000000001fb8b348) timer
+ ROM: [000000001fdfa000,000000001fe66f08) vfs.lib.so
+[0m
+Genode 18.05-130-gb485caf33[0m
+467 MiB RAM and 63253 caps assigned to init[0m
+[init] parent provides[0m[0m
+[init]   service "ROM"[0m[0m
+[init]   service "LOG"[0m[0m
+[init]   service "CAP"[0m[0m
+[init]   service "RAM"[0m[0m
+[init]   service "RM"[0m[0m
+[init]   service "CPU"[0m[0m
+[init]   service "PD"[0m[0m
+[init]   service "IRQ"[0m[0m
+[init]   service "IO_PORT"[0m[0m
+[init]   service "IO_MEM"[0m[0m
+[init]   service "SIGNAL"[0m[0m
+[init] child "timer"[0m[0m
+[init]   RAM quota:  776K[0m[0m
+[init]   cap quota:  68[0m[0m
+[init]   ELF binary: timer[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Timer[0m[0m
+[init] child "nic_drv"[0m[0m
+[init]   RAM quota:  20232K[0m[0m
+[init]   cap quota:  98[0m[0m
+[init]   ELF binary: nic_drv[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Nic[0m[0m
+[init] child "tester_lxip"[0m[0m
+[init]   RAM quota:  261896K[0m[0m
+[init]   cap quota:  468[0m[0m
+[init]   ELF binary: tester_lxip[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Tester_lxip[0m[0m
+[init] child "acpi_drv"[0m[0m
+[init]   RAM quota:  2824K[0m[0m
+[init]   cap quota:  368[0m[0m
+[init]   ELF binary: acpi_drv[0m[0m
+[init]   priority:   0[0m[0m
+[init] child "acpi_report_rom"[0m[0m
+[init]   RAM quota:  1800K[0m[0m
+[init]   cap quota:  68[0m[0m
+[init]   ELF binary: report_rom[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service ROM[0m[0m
+[init]   provides service Report[0m[0m
+[init] child "platform_drv"[0m[0m
+[init]   RAM quota:  3848K[0m[0m
+[init]   cap quota:  768[0m[0m
+[init]   ELF binary: platform_drv[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Platform[0m[0m
+[init]   provides service Acpi[0m[0m
+[init] child "acpi_report_rom" announces service "Report"[0m[0m
+[init] child "acpi_report_rom" announces service "ROM"[0m[0m
+[init -> nic_drv] --- iPXE NIC driver started ---[0m[0m
+[init -> nic_drv] -- init iPXE NIC[0m[0m
+[init] child "timer" announces service "Timer"[0m[0m
+[init -> acpi_drv] Found MADT[0m[0m
+[init -> acpi_drv] MADT IRQ 0 -> GSI 2 flags: 0[0m[0m
+[init -> acpi_drv] MADT IRQ 5 -> GSI 5 flags: 13[0m[0m
+[init -> acpi_drv] MADT IRQ 9 -> GSI 9 flags: 13[0m[0m
+[init -> acpi_drv] MADT IRQ 10 -> GSI 10 flags: 13[0m[0m
+[init -> acpi_drv] MADT IRQ 11 -> GSI 11 flags: 13[0m[0m
+[init -> acpi_drv] Found MCFG[0m[0m
+[init -> acpi_drv] MCFG BASE 0xb0000000 seg 0x0 bus 0x0-0xff[0m[0m
+[init -> acpi_drv] RSDT OEM 'BOCHS ', table id 'BXPCRSDT', revision 1, creator 'BXPC' (1)[0m[0m
+[init -> platform_drv] ECAM/MMCONF range 00:00.0-ff:1f.7 - addr [00000000b0000000,00000000c0000000)[0m[0m
+[init -> tester_lxip]   0xa0000000 .. 0xafffffff: stack area[0m[0m
+[init -> tester_lxip]   0x30000 .. 0x148fff: ld.lib.so[0m[0m
+[init -> tester_lxip]   0x1018000 .. 0x1182fff: libc.lib.so[0m[0m
+[init -> tester_lxip]   0x1183000 .. 0x11effff: vfs.lib.so[0m[0m
+[init -> tester_lxip]   0x11f0000 .. 0x1219fff: libm.lib.so[0m[0m
+[init -> tester_lxip]   0x121a000 .. 0x1349fff: lxip.lib.so[0m[0m
+[init -> tester_lxip]   0x134a000 .. 0x1356fff: posix.lib.so[0m[0m
+[init -> platform_drv] Root bridge: 00:00.0[0m[0m
+[init -> tester_lxip] using the lxip libc plugin[0m[0m
+[init -> tester_lxip] Using DHCP for interface configuration.[0m[0m
+[init] child "platform_drv" announces service "Platform"[0m[0m
+[init -> nic_drv] [36mFound: 00:02.0 8086:100e (rev 03) IRQ 0b[0m[0m
+[init -> nic_drv] [36musing driver 82540em[0m[0m
+[init -> nic_drv] [36mPCI device 00:02.0 latency timer is unreasonably low at 0. Setting to 32.[0m
+[init -> nic_drv] [0m[0m
+[init -> nic_drv] [36mbus_addr = febc0000 len = 20000[0m[0m
+[init -> nic_drv] [35msnprintf not implemented[0m[0m
+[init -> platform_drv] IRQ override 11->11, trigger mode: LEVEL, polarity: HIGH[0m[0m
+[init -> platform_drv] 00:02.0 uses IRQ, vector 0xb, non-maskable[0m[0m
+[init] child "nic_drv" announces service "Nic"[0m[0m
+[init -> nic_drv] MAC address 52:54:00:12:34:56[0m[0m
+[init -> tester_lxip] INFO: NET: Registered protocol family 16[0m
+[init -> tester_lxip] INFO: NET: Registered protocol family 2[0m
+[init -> tester_lxip] queue_delayed_work: queue_delayed_work called (from 0x1280998) return 0[0m[0m
+[init -> tester_lxip] queue_delayed_work: queue_delayed_work called (from 0x129ae3a) return 0[0m[0m
+[init -> tester_lxip] INFO: Hash tables configured (established 524288 bind 524288)[0m
+[init -> tester_lxip] Received mac: 52:54:00:12:34:56[0m[0m
+[init -> tester_lxip] queue_delayed_work: queue_delayed_work called (from 0x12990cf) return 0[0m[0m
+[init -> tester_lxip] NOTICE: Sending DHCP requests ., OK[0m
+[init -> tester_lxip] my address is 10.0.2.15[0m
+[init -> tester_lxip] queue_delayed_work: queue_delayed_work called (from 0x12990cf) return 0[0m[0m
+[init -> tester_lxip] queue_delayed_work: queue_delayed_work called (from 0x12990cf) return 0[0m[0m
+[init -> tester_lxip] INFO: IP-Config: Complete:[0m
+[init -> tester_lxip] INFO:      device=eth0, len=6 hwaddr=52:54:00:12:34:56, ipaddr=10.0.2.15, mask=255.255.255.0 , gw=10.0.2.2[0m
+[init -> tester_lxip] INFO:      host=0x1315674I4, domain=, nis-domain=[0m
+[init -> tester_lxip] INFO:      bootserver=10.0.2.2, rootserver=10.0.2.2, rootpath=[0m
+[init -> tester_lxip] INFO:      nameserver0=10.0.2.3[0m
+[init -> tester_lxip] listen socket is in NONBLOCK mode: 0[0m
+[init -> tester_lxip] listen socket is in NONBLOCK mode: 0[0m
+[init -> tester_lxip] waiting for connection...[0m
+[init -> tester_lxip] failed to accept: errno: 22: Unknown error: 0[0m
+[init -> tester_lxip] NOTE: EAGAIN is 35[0m
+[init -> tester_lxip] NOTE: EWOULDBLOCK is 35[0m
+[init -> tester_lxip] [34mWarning: 4 dangling allocations at allocator destruction time[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [31mError: freeing non-empty slab block[0m[0m
+[init -> tester_lxip] [34mWarning: 14 dangling allocations at allocator destruction time[0m[0m
+[init] child "tester_lxip" exited with exit value 4[0m[0m
+Expect: 'interact' received 'strg+c' and was cancelled

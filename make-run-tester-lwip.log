@@ -1,0 +1,1633 @@
+including /home/devuan/genode/tool/run/power_on/qemu
+including /home/devuan/genode/tool/run/log/qemu
+including /home/devuan/genode/tool/run/image/iso
+including /home/devuan/genode/tool/run/boot_dir/nova
+including /home/devuan/genode/repos/tester/run/tester_lwip.run
+building targets:  tester_lwip core init drivers/timer drivers/nic drivers/platform server/report_rom drivers/acpi
+spawn make tester_lwip core init drivers/timer drivers/nic drivers/platform server/report_rom drivers/acpi
+make[1]: Entering directory '/home/devuan/genode/build/x86_64'
+checking library dependencies...
+Skip target drivers/nic/fec because it requires [00;33marm_v7[0m
+Skip target drivers/nic/spec/gem because it requires [00;33mcadence_gem[0m
+Skip target drivers/nic/spec/linux because it requires [00;33mlinux[0m
+Skip target drivers/nic/spec/pbxa9 because it requires [00;33mpbxa9[0m
+Skip target drivers/platform/spec/arndale because it requires [00;33marndale[0m
+Skip target drivers/platform/spec/imx53 because it requires [00;33mimx53[0m
+Skip target drivers/platform/spec/odroid_x2 because it requires [00;33modroid_x2[0m
+Skip target drivers/platform/spec/rpi because it requires [00;33mrpi[0m
+Skip target drivers/timer/epit/wand_quad because it requires [00;33mwand_quad[0m
+Skip target drivers/timer/fiasco because it requires [00;33mfiasco[0m
+Skip target drivers/timer/foc because it requires [00;33mfoc[0m
+Skip target drivers/timer/hw because it requires [00;33mhw[0m
+Skip target drivers/timer/linux because it requires [00;33mlinux[0m
+[00;33m  Library [0mcxx
+[00;33m  Library [0mstartup-nova
+[00;33m  Library [0mldso-startup
+    COMPILE  _main.o
+    COMPILE  startup.o
+    COMPILE  exception.o
+[00;33m  Library [0mlibc-stdlib
+    COMPILE  _Exit.o
+[00;33m  Library [0mdde_ipxe_nic
+    MERGE    ldso-startup.lib.a
+[00;33m  Library [0mlibc-locale
+[00;33m  Library [0mlibc-string
+    COMPILE  ascii.o
+[00;33m  Library [0mlibc-stdio
+    COMPILE  bcmp.o
+    COMPILE  _flock_stub.o
+    COMPILE  arch/i386/core/rdtsc_timer.o
+    COMPILE  a64l.o
+    COMPILE  asprintf.o
+    COMPILE  arch/x86/core/x86_string.o
+    COMPILE  abort.o
+    COMPILE  bcopy.o
+    COMPILE  big5.o
+    COMPILE  clrerr.o
+    COMPILE  core/bitops.o
+    COMPILE  bzero.o
+    COMPILE  btowc.o
+    COMPILE  core/iobuf.o
+    COMPILE  collate.o
+    COMPILE  abs.o
+    COMPILE  dprintf.o
+    COMPILE  fclose.o
+    COMPILE  guard.o
+    COMPILE  ffs.o
+    COMPILE  fcloseall.o
+    COMPILE  atof.o
+    COMPILE  fdopen.o
+    COMPILE  core/list.o
+    COMPILE  ffsl.o
+    COMPILE  collcmp.o
+    ASSEMBLE crt0.o
+    COMPILE  core/random.o
+    COMPILE  feof.o
+    COMPILE  ffsll.o
+    COMPILE  init_main_thread.o
+    COMPILE  euc.o
+    COMPILE  atoi.o
+    COMPILE  malloc_free.o
+    COMPILE  fix_grouping.o
+    COMPILE  core/string.o
+    COMPILE  ferror.o
+    COMPILE  fls.o
+    COMPILE  atol.o
+    COMPILE  fflush.o
+    COMPILE  atoll.o
+    COMPILE  flsl.o
+    COMPILE  gb18030.o
+    COMPILE  fgetc.o
+    COMPILE  flsll.o
+    COMPILE  bsearch.o
+    COMPILE  index.o
+    COMPILE  div.o
+    COMPILE  fgetln.o
+    COMPILE  memccpy.o
+    COMPILE  fgetpos.o
+    COMPILE  getenv.o
+    COMPILE  memchr.o
+    COMPILE  gb2312.o
+    COMPILE  misc.o
+    MERGE    startup-nova.lib.a
+    COMPILE  dde.o
+    COMPILE  memcmp.o
+    COMPILE  fgets.o
+    COMPILE  fgetwc.o
+    COMPILE  gbk.o
+    COMPILE  new_delete.o
+    COMPILE  memcpy.o
+    COMPILE  fgetwln.o
+    COMPILE  memmove.o
+    COMPILE  memmem.o
+    COMPILE  isctype.o
+    COMPILE  dde_support.o
+    COMPILE  fgetws.o
+    COMPILE  fileno.o
+    COMPILE  getopt.o
+    COMPILE  memrchr.o
+    COMPILE  findfp.o
+    COMPILE  getopt_long.o
+    COMPILE  memset.o
+    COMPILE  getsubopt.o
+    COMPILE  iswctype.o
+[00;33m  Library [0mlibc-gen
+    COMPILE  __getosreldate.o
+    COMPILE  rindex.o
+    COMPILE  hcreate.o
+    COMPILE  flags.o
+    COMPILE  stpcpy.o
+    COMPILE  drivers/bitbash/bitbash.o
+    COMPILE  __xuname.o
+    COMPILE  ldpart.o
+    COMPILE  unwind.o
+    COMPILE  heapsort.o
+    COMPILE  stpncpy.o
+    COMPILE  fopen.o
+    COMPILE  _once_stub.o
+    COMPILE  strcasecmp.o
+    MERGE    supc++.o
+    COMPILE  _pthread_stubs.o
+    COMPILE  imaxabs.o
+    COMPILE  lmessages.o
+    COMPILE  _rand48.o
+    COMPILE  strcasestr.o
+    CONVERT  supc++.o
+    MERGE    cxx.lib.a
+    COMPILE  imaxdiv.o
+    COMPILE  fprintf.o
+    COMPILE  lmonetary.o
+    COMPILE  fpurge.o
+    COMPILE  strcat.o
+    COMPILE  fputs.o
+    COMPILE  insque.o
+    COMPILE  fputc.o
+    COMPILE  strchr.o
+    COMPILE  lnumeric.o
+    COMPILE  fputwc.o
+    COMPILE  l64a.o
+    COMPILE  strcmp.o
+    COMPILE  fputws.o
+    COMPILE  drivers/bitbash/spi_bit.o
+    COMPILE  strcpy.o
+    COMPILE  localeconv.o
+    COMPILE  labs.o
+    COMPILE  strcspn.o
+    COMPILE  mblen.o
+    COMPILE  drivers/bus/pciextra.o
+    COMPILE  ldiv.o
+    COMPILE  mbrlen.o
+    COMPILE  fread.o
+    COMPILE  llabs.o
+    COMPILE  mbrtowc.o
+    COMPILE  strdup.o
+    COMPILE  strerror.o
+    COMPILE  lldiv.o
+    COMPILE  drivers/net/eepro100.o
+    COMPILE  mbsinit.o
+    COMPILE  strlcat.o
+    COMPILE  strlcpy.o
+    COMPILE  lsearch.o
+    COMPILE  freopen.o
+    COMPILE  strlen.o
+    COMPILE  fscanf.o
+    COMPILE  mbsnrtowcs.o
+    COMPILE  _spinlock_stub.o
+    COMPILE  merge.o
+    COMPILE  mbsrtowcs.o
+    COMPILE  strmode.o
+    COMPILE  fseek.o
+    COMPILE  mbstowcs.o
+    COMPILE  _thread_init.o
+    COMPILE  fsetpos.o
+    COMPILE  strncat.o
+    COMPILE  alarm.o
+    COMPILE  mbtowc.o
+    COMPILE  strncmp.o
+    COMPILE  mskanji.o
+    COMPILE  ftell.o
+    COMPILE  strncpy.o
+    COMPILE  arc4random.o
+    COMPILE  strndup.o
+    COMPILE  drivers/net/intel.o
+    COMPILE  nextwctype.o
+    COMPILE  funopen.o
+    COMPILE  ptsname.o
+    COMPILE  strnlen.o
+    COMPILE  nl_langinfo.o
+    COMPILE  fvwrite.o
+    COMPILE  qsort.o
+[00;33m  Library [0mlibc-gdtoa
+    COMPILE  strnstr.o
+    COMPILE  assert.o
+    COMPILE  nomacros.o
+    COMPILE  _hdtoa.o
+    COMPILE  basename.o
+    COMPILE  fwalk.o
+    COMPILE  strpbrk.o
+    COMPILE  none.o
+    COMPILE  check_utility_compat.o
+    COMPILE  fwide.o
+    COMPILE  strrchr.o
+    COMPILE  strsep.o
+    COMPILE  _hldtoa.o
+    COMPILE  rpmatch.o
+    COMPILE  clock.o
+    COMPILE  fwprintf.o
+    COMPILE  strsignal.o
+    COMPILE  qsort_r.o
+    COMPILE  fwrite.o
+    COMPILE  rune.o
+    COMPILE  closedir.o
+    COMPILE  _ldtoa.o
+    COMPILE  strspn.o
+    COMPILE  confstr.o
+[00;33m  Library [0mlibc-inet
+    COMPILE  dmisc.o
+    COMPILE  inet_addr.o
+    COMPILE  strstr.o
+    COMPILE  crypt.o
+    COMPILE  strtok.o
+    COMPILE  inet_cidr_ntop.o
+    COMPILE  fwscanf.o
+    COMPILE  dtoa.o
+    COMPILE  radixsort.o
+    COMPILE  runetype.o
+    COMPILE  swab.o
+    COMPILE  getc.o
+    COMPILE  setlocale.o
+    COMPILE  ctermid.o
+    COMPILE  wcpcpy.o
+    COMPILE  inet_cidr_pton.o
+    COMPILE  getchar.o
+    COMPILE  daemon.o
+    COMPILE  getdelim.o
+    COMPILE  wcpncpy.o
+    COMPILE  dirname.o
+    COMPILE  rand.o
+    COMPILE  disklabel.o
+    COMPILE  getline.o
+    COMPILE  g_Qfmt.o
+    COMPILE  wcscasecmp.o
+    COMPILE  random.o
+    COMPILE  g__fmt.o
+    COMPILE  inet_lnaof.o
+    COMPILE  setrunelocale.o
+    COMPILE  gets.o
+    COMPILE  g_ddfmt.o
+    COMPILE  dlfcn.o
+    COMPILE  wcscat.o
+    COMPILE  inet_makeaddr.o
+    COMPILE  reallocf.o
+    COMPILE  table.o
+    COMPILE  inet_net_ntop.o
+    COMPILE  getw.o
+    COMPILE  tolower.o
+    COMPILE  realpath.o
+    COMPILE  drand48.o
+    COMPILE  g_dfmt.o
+    COMPILE  toupper.o
+    COMPILE  wcschr.o
+    COMPILE  getwc.o
+    COMPILE  erand48.o
+    COMPILE  g_ffmt.o
+    COMPILE  getwchar.o
+    COMPILE  utf8.o
+    COMPILE  err.o
+    COMPILE  remque.o
+    COMPILE  wcscmp.o
+    COMPILE  g_xLfmt.o
+    COMPILE  strfmon.o
+    COMPILE  inet_net_pton.o
+    COMPILE  wcscpy.o
+    COMPILE  wcscspn.o
+    COMPILE  makebuf.o
+    COMPILE  wcsdup.o
+    COMPILE  wcslcat.o
+    COMPILE  errlst.o
+    COMPILE  g_xfmt.o
+    COMPILE  mktemp.o
+    COMPILE  errno.o
+    COMPILE  wcrtomb.o
+    COMPILE  exec.o
+    COMPILE  wcsftime.o
+    COMPILE  gdtoa.o
+    COMPILE  wcslcpy.o
+    COMPILE  inet_neta.o
+    COMPILE  wcsnrtombs.o
+    COMPILE  perror.o
+    COMPILE  inet_netof.o
+    COMPILE  inet_network.o
+    COMPILE  wcsrtombs.o
+    COMPILE  wcslen.o
+    COMPILE  inet_ntoa.o
+    COMPILE  strtoimax.o
+    COMPILE  wcstod.o
+    COMPILE  wcsncasecmp.o
+    COMPILE  inet_ntop.o
+    COMPILE  printf-pos.o
+    COMPILE  fdevname.o
+    COMPILE  wcsncat.o
+    COMPILE  inet_pton.o
+    COMPILE  flt_rounds.o
+    COMPILE  wcstof.o
+    COMPILE  strtol.o
+    COMPILE  wcsncmp.o
+    COMPILE  fmtcheck.o
+    COMPILE  wcstoimax.o
+    COMPILE  strtoll.o
+    COMPILE  wcsncpy.o
+    COMPILE  wcsnlen.o
+    COMPILE  strtonum.o
+    COMPILE  gethex.o
+    COMPILE  wcspbrk.o
+    COMPILE  fmtmsg.o
+    COMPILE  nsap_addr.o
+    COMPILE  wcstol.o
+    COMPILE  strtoq.o
+    COMPILE  wcsrchr.o
+    COMPILE  wcstold.o
+    MERGE    libc-inet.lib.a
+    COMPILE  fnmatch.o
+    COMPILE  wcsspn.o
+    COMPILE  wcstoll.o
+    COMPILE  glue.o
+    COMPILE  strtoul.o
+    COMPILE  wcsstr.o
+    COMPILE  printf.o
+    COMPILE  wcstombs.o
+    COMPILE  wcstok.o
+[00;33m  Library [0mlibc-stdtime
+    COMPILE  asctime.o
+    COMPILE  gmisc.o
+    COMPILE  putc.o
+    COMPILE  wcstoul.o
+    COMPILE  strtoull.o
+    COMPILE  wcswidth.o
+    COMPILE  difftime.o
+    COMPILE  fpclassify.o
+    COMPILE  wcstoull.o
+    COMPILE  strtoumax.o
+    COMPILE  wmemchr.o
+    COMPILE  putchar.o
+    COMPILE  localtime.o
+    COMPILE  hd_init.o
+    COMPILE  fpgetmask.o
+    COMPILE  puts.o
+    COMPILE  fpgetprec.o
+    COMPILE  wmemcmp.o
+    COMPILE  hexnan.o
+    COMPILE  wcstoumax.o
+    COMPILE  putw.o
+    COMPILE  fpgetround.o
+    COMPILE  strtouq.o
+    COMPILE  wmemcpy.o
+    COMPILE  system.o
+    COMPILE  putwc.o
+    COMPILE  wmemmove.o
+    COMPILE  wctob.o
+    COMPILE  fpgetsticky.o
+    COMPILE  tdelete.o
+    COMPILE  machdep_ldisd.o
+    COMPILE  putwchar.o
+    COMPILE  fpsetmask.o
+    COMPILE  wmemset.o
+    COMPILE  wctomb.o
+    COMPILE  fpsetprec.o
+    COMPILE  tfind.o
+    COMPILE  wctrans.o
+    COMPILE  refill.o
+    MERGE    libc-string.lib.a
+    COMPILE  misc.o
+    COMPILE  tsearch.o
+    COMPILE  fpsetround.o
+    COMPILE  wctype.o
+    COMPILE  twalk.o
+    COMPILE  remove.o
+    COMPILE  wcwidth.o
+    COMPILE  strftime.o
+    MERGE    libc-stdlib.lib.a
+    COMPILE  rewind.o
+    COMPILE  fstab.o
+    MERGE    libc-locale.lib.a
+    COMPILE  rget.o
+[00;33m  Library [0mlibc-compat
+    COMPILE  creat.o
+[00;33m  Library [0mlibc-regex
+    COMPILE  gethostid.o
+    COMPILE  regcomp.o
+    COMPILE  scanf.o
+    COMPILE  smisc.o
+    COMPILE  ftok.o
+    COMPILE  setbuf.o
+    COMPILE  strtoIQ.o
+    COMPILE  getwd.o
+    COMPILE  fts-compat.o
+    COMPILE  setbuffer.o
+    COMPILE  killpg.o
+    COMPILE  strtoId.o
+    COMPILE  sethostid.o
+    COMPILE  setvbuf.o
+    COMPILE  regerror.o
+    COMPILE  setpgrp.o
+    COMPILE  snprintf.o
+    COMPILE  strtoIdd.o
+    COMPILE  setrgid.o
+    COMPILE  sprintf.o
+    COMPILE  setruid.o
+    COMPILE  sscanf.o
+    COMPILE  strtoIf.o
+    COMPILE  stdio.o
+    COMPILE  sigcompat.o
+    COMPILE  strptime.o
+    COMPILE  regexec.o
+    COMPILE  swprintf.o
+    COMPILE  strtoIg.o
+    MERGE    libc-compat.lib.a
+    COMPILE  swscanf.o
+    COMPILE  fts.o
+[00;33m  Library [0mlibc-setjmp
+    COMPILE  _setjmp.o
+    COMPILE  setjmp.o
+    COMPILE  strtoIx.o
+    MERGE    libc-setjmp.lib.a
+    COMPILE  strtoIxL.o
+    COMPILE  tempnam.o
+    COMPILE  strtod.o
+    COMPILE  time32.o
+    COMPILE  timelocal.o
+    COMPILE  tmpfile.o
+    COMPILE  regfree.o
+    COMPILE  tmpnam.o
+    MERGE    libc-stdtime.lib.a
+[00;33m  Library [0mlibc-mem
+    COMPILE  strtodI.o
+    COMPILE  libc_mem_alloc.o
+    COMPILE  ungetwc.o
+    COMPILE  ungetc.o
+    COMPILE  ftw.o
+    COMPILE  vasprintf.o
+    COMPILE  vdprintf.o
+    COMPILE  strtodg.o
+    COMPILE  vfprintf.o
+    COMPILE  getbootfile.o
+    COMPILE  strtof.o
+    COMPILE  strtopQ.o
+    COMPILE  getbsize.o
+    COMPILE  vfscanf.o
+    COMPILE  vfwprintf.o
+    COMPILE  getcap.o
+    COMPILE  drivers/net/mii.o
+    COMPILE  drivers/net/realtek.o
+    MERGE    libc-mem.lib.a
+    COMPILE  getcwd.o
+    COMPILE  strtopd.o
+    COMPILE  strtopdd.o
+    COMPILE  drivers/net/tg3/tg3.o
+    COMPILE  getdomainname.o
+[00;33m  Library [0mlibc-resolv
+    COMPILE  h_errno.o
+    COMPILE  herror.o
+    MERGE    libc-regex.lib.a
+    COMPILE  strtopf.o
+    COMPILE  getgrent.o
+    COMPILE  mtctxres.o
+    COMPILE  strtopx.o
+[00;33m  Library [0mlibc-isc
+    COMPILE  res_comp.o
+    COMPILE  strtopxL.o
+    COMPILE  ev_streams.o
+    COMPILE  drivers/net/tg3/tg3_hw.o
+    COMPILE  ev_timers.o
+    COMPILE  strtorQ.o
+    COMPILE  strtord.o
+    COMPILE  strtordd.o
+    COMPILE  res_data.o
+    MERGE    libc-isc.lib.a
+    COMPILE  strtorf.o
+    COMPILE  strtorx.o
+    COMPILE  strtorxL.o
+    COMPILE  vfwscanf.o
+    COMPILE  sum.o
+[00;33m  Library [0mlibc-nameser
+    COMPILE  ulp.o
+    COMPILE  ns_name.o
+    COMPILE  res_debug.o
+    COMPILE  getgrouplist.o
+    COMPILE  vprintf.o
+    MERGE    libc-gdtoa.lib.a
+    COMPILE  gethostname.o
+    COMPILE  vscanf.o
+    COMPILE  getloadavg.o
+    COMPILE  vsnprintf.o
+    COMPILE  getlogin.o
+[00;33m  Library [0mlibc-net
+    COMPILE  getnetgrent.o
+    COMPILE  base64.o
+    COMPILE  getmntinfo.o
+    COMPILE  getaddrinfo.o
+    COMPILE  getpagesize.o
+    COMPILE  getpeereid.o
+    COMPILE  getprogname.o
+    COMPILE  getttyent.o
+    COMPILE  getusershell.o
+    COMPILE  ns_netint.o
+    COMPILE  gethostbydns.o
+    COMPILE  glob.o
+    COMPILE  infinity.o
+    COMPILE  initgroups.o
+    COMPILE  res_findzonecut.o
+    COMPILE  vsprintf.o
+    COMPILE  ns_parse.o
+    COMPILE  isatty.o
+    COMPILE  isinf.o
+    COMPILE  isnan.o
+    COMPILE  vsscanf.o
+    COMPILE  drivers/net/tg3/tg3_phy.o
+    COMPILE  drivers/nvs/nvs.o
+    COMPILE  ns_print.o
+    COMPILE  gethostbyht.o
+    COMPILE  vswprintf.o
+    COMPILE  drivers/nvs/threewire.o
+    COMPILE  getnameinfo.o
+    COMPILE  gethostnamadr.o
+    COMPILE  jrand48.o
+    COMPILE  vswscanf.o
+    COMPILE  dummies.o
+    COMPILE  res_init.o
+    COMPILE  lcong48.o
+    COMPILE  vwprintf.o
+    COMPILE  ldexp.o
+    COMPILE  getprotoent.o
+    COMPILE  lockf.o
+    COMPILE  vwscanf.o
+    COMPILE  res_mkquery.o
+    COMPILE  wbuf.o
+    COMPILE  getprotoname.o
+    COMPILE  lrand48.o
+    COMPILE  getservent.o
+    COMPILE  res_mkupdate.o
+    COMPILE  wprintf.o
+    COMPILE  map_v4v6.o
+    COMPILE  ns_samedomain.o
+    COMPILE  makecontext.o
+    COMPILE  wscanf.o
+    COMPILE  name6.o
+    COMPILE  wsetup.o
+    COMPILE  ns_ttl.o
+    COMPILE  net/eth_slow.o
+    COMPILE  mrand48.o
+    COMPILE  res_query.o
+    COMPILE  xprintf.o
+    COMPILE  net/ethernet.o
+    COMPILE  nftw.o
+    COMPILE  nice.o
+    MERGE    libc-nameser.lib.a
+    COMPILE  nlist.o
+    COMPILE  res_send.o
+    COMPILE  nsdispatch.o
+    COMPILE  net/iobpad.o
+    CONVERT  nslexer.c
+[00;33m  Library [0mlibc-rpc
+    COMPILE  net/netdevice.o
+    COMPILE  bindresvport.o
+    COMPILE  xprintf_errno.o
+    COMPILE  nrand48.o
+    COMPILE  xprintf_float.o
+    COMPILE  res_state.o
+    MERGE    libc-rpc.lib.a
+    CONVERT  nsparser.c
+[00;33m  Library [0malarm
+    COMPILE  alarm.o
+    COMPILE  vars.o
+    COMPILE  nslexer.o
+    COMPILE  opendir.o
+    COMPILE  pause.o
+    COMPILE  pmadvise.o
+    COMPILE  xprintf_hexdump.o
+    COMPILE  net/nullnet.o
+    COMPILE  popen.o
+    MERGE    alarm.lib.a
+    COMPILE  nic.o
+[00;33m  Library [0mbase-nova-common
+    COMPILE  allocator_avl.o
+    COMPILE  xprintf_int.o
+    COMPILE  res_update.o
+    COMPILE  avl_tree.o
+[00;33m  Library [0mld
+    COMPILE  posix_spawn.o
+    CONVERT  ld.symbols.s
+    ASSEMBLE ld.symbols.o
+    MERGE    ld.abi.so
+[00;33m  Library [0mtimed_semaphore
+    COMPILE  timed_semaphore.o
+    MERGE    dde_ipxe_nic.lib.a
+    COMPILE  cap_map.o
+    MERGE    libc-resolv.lib.a
+    COMPILE  xprintf_quote.o
+    COMPILE  nsparser.o
+[00;33m  Library [0mbase
+    MERGE    base.lib.a
+    COMPILE  psignal.o
+    COMPILE  capability.o
+    COMPILE  pw_scan.o
+    COMPILE  xprintf_str.o
+    MERGE    libc-net.lib.a
+    COMPILE  child.o
+[01;33m  Program [0mdrivers/nic/nic_drv
+    COMPILE  main.o
+    COMPILE  child_process.o
+[01;33m  Program [0mdrivers/acpi/spec/x86/acpi_drv
+    COMPILE  xprintf_time.o
+    COMPILE  acpi.o
+    COMPILE  pwcache.o
+    COMPILE  main.o
+    COMPILE  raise.o
+    COMPILE  xprintf_vis.o
+    MERGE    libc-stdio.lib.a
+    COMPILE  readdir.o
+    COMPILE  readpassphrase.o
+    COMPILE  rewinddir.o
+    COMPILE  scandir.o
+    COMPILE  seed48.o
+    COMPILE  semctl.o
+    COMPILE  setdomainname.o
+    COMPILE  seekdir.o
+    COMPILE  sethostname.o
+    COMPILE  setjmperr.o
+    COMPILE  setmode.o
+    COMPILE  setprogname.o
+    COMPILE  siginterrupt.o
+    COMPILE  siglist.o
+    COMPILE  signal.o
+    MERGE    timed_semaphore.lib.a
+    COMPILE  signalcontext.o
+[01;33m  Program [0mdrivers/platform/spec/x86/platform_drv
+    COMPILE  device_pd.o
+    COMPILE  sigsetops.o
+    COMPILE  sigsetjmp.o
+    COMPILE  srand48.o
+    COMPILE  sleep.o
+    COMPILE  statvfs.o
+    COMPILE  strtofflags.o
+    COMPILE  stringlist.o
+    COMPILE  swapcontext.o
+    COMPILE  sysctl.o
+[01;33m  Program [0mdrivers/timer/nova/nova_timer_drv
+    COMPILE  sysctlnametomib.o
+    COMPILE  syslog.o
+    COMPILE  main.o
+    COMPILE  telldir.o
+    COMPILE  termios.o
+    COMPILE  time.o
+    COMPILE  times.o
+    COMPILE  timezone.o
+    COMPILE  tls.o
+    COMPILE  ttyname.o
+    COMPILE  ttyslot.o
+    COMPILE  ualarm.o
+    COMPILE  ulimit.o
+[01;33m  Program [0mdrivers/timer/pit/pit_timer_drv
+    COMPILE  main.o
+    COMPILE  uname.o
+    COMPILE  unvis.o
+    COMPILE  irq.o
+    COMPILE  usleep.o
+    COMPILE  utime.o
+    COMPILE  vis.o
+    COMPILE  wait.o
+    COMPILE  wait3.o
+    COMPILE  waitpid.o
+    COMPILE  wordexp.o
+    COMPILE  component.o
+    MERGE    libc-gen.lib.a
+[01;33m  Program [0minit/init
+    COMPILE  child.o
+    LINK     nic_drv
+    COMPILE  main.o
+    COMPILE  nova/time_source.o
+    COMPILE  console.o
+    COMPILE  main.o
+    COMPILE  elf_binary.o
+    COMPILE  entrypoint.o
+    LINK     acpi_drv
+[01;33m  Program [0mserver/report_rom/report_rom
+    COMPILE  main.o
+    COMPILE  time_source.o
+    COMPILE  env_session_id_space.o
+    LINK     pit_timer_drv
+[00;33m  Library [0mvfs
+    COMPILE  file_system_factory.o
+    CONVERT  vfs.symbols.s
+    ASSEMBLE vfs.symbols.o
+    MERGE    vfs.abi.so
+    COMPILE  nonpci_devices.o
+    COMPILE  heap.o
+    LINK     nova_timer_drv
+    COMPILE  ipc.o
+    COMPILE  lock.o
+    COMPILE  log.o
+    COMPILE  output.o
+    COMPILE  raw_output.o
+    COMPILE  region_map_client.o
+    COMPILE  registry.o
+    COMPILE  rm_session_client.o
+    COMPILE  root_proxy.o
+    COMPILE  session_state.o
+    COMPILE  rpc_entrypoint.o
+    LINK     report_rom
+    COMPILE  signal_common.o
+    COMPILE  server.o
+    COMPILE  signal_transmitter.o
+    COMPILE  pci_device.o
+    COMPILE  slab.o
+    COMPILE  sleep.o
+    COMPILE  sliced_heap.o
+    COMPILE  session.o
+    COMPILE  stack.o
+    COMPILE  stack_allocator.o
+    COMPILE  stack_area_addr.o
+    COMPILE  thread.o
+    COMPILE  thread_myself.o
+    COMPILE  trace.o
+    MERGE    base-nova-common.lib.a
+[00;33m  Library [0mcore-nova
+    COMPILE  bios_data_area.o
+    COMPILE  core_log.o
+    COMPILE  core_log_out.o
+    COMPILE  core_region_map.o
+    COMPILE  core_mem_alloc.o
+    COMPILE  core_rpc_cap_alloc.o
+    COMPILE  cpu_session_component.o
+    COMPILE  cpu_session_support.o
+    COMPILE  cpu_thread_component.o
+    LINK     platform_drv
+    COMPILE  dataspace_component.o
+    COMPILE  default_log.o
+    LINK     init
+    COMPILE  dump_alloc.o
+    COMPILE  echo.o
+    COMPILE  io_mem_session_component.o
+    COMPILE  io_mem_session_support.o
+    COMPILE  io_port_session_component.o
+    COMPILE  io_port_session_support.o
+    COMPILE  ipc_pager.o
+    COMPILE  irq_session_component.o
+    COMPILE  main.o
+    COMPILE  native_cpu_component.o
+    COMPILE  native_pd_component.o
+    COMPILE  pager.o
+    COMPILE  pd_session_component.o
+    COMPILE  pd_session_support.o
+    MERGE    vfs.lib.so
+    COMPILE  platform.o
+[00;33m  Library [0mlibc
+    COMPILE  atexit.o
+    COMPILE  dummies.o
+    COMPILE  platform_pd.o
+    COMPILE  platform_rom_modules.o
+    COMPILE  platform_services.o
+    COMPILE  platform_thread.o
+    COMPILE  dynamic_linker.o
+    COMPILE  ram_dataspace_factory.o
+    COMPILE  environ.o
+    COMPILE  ram_dataspace_support.o
+    COMPILE  errno.o
+    COMPILE  region_map_component.o
+    COMPILE  exit.o
+    COMPILE  fd_alloc.o
+    COMPILE  rom_session_component.o
+    COMPILE  rpc_cap_factory.o
+    COMPILE  signal_receiver.o
+    COMPILE  signal_transmitter_noinit.o
+    COMPILE  file_operations.o
+    COMPILE  spec/x86_64/pager.o
+    COMPILE  stack_area.o
+    COMPILE  thread_start.o
+    COMPILE  trace_session_component.o
+    COMPILE  gai_strerror.o
+    COMPILE  version.o
+    COMPILE  issetugid.o
+    COMPILE  libc_pdbg.o
+    COMPILE  malloc.o
+    COMPILE  nanosleep.o
+    COMPILE  plugin.o
+    COMPILE  plugin_registry.o
+    COMPILE  poll.o
+    COMPILE  pread_pwrite.o
+    COMPILE  progname.o
+    COMPILE  rlimit.o
+    COMPILE  readv_writev.o
+    COMPILE  rtc.o
+    COMPILE  select.o
+    COMPILE  signal.o
+    COMPILE  socket_fs_plugin.o
+    COMPILE  socket_operations.o
+    COMPILE  strcoll.o
+    COMPILE  strxfrm.o
+    COMPILE  syscall.o
+    COMPILE  task.o
+    COMPILE  sysctl.o
+    COMPILE  time.o
+    COMPILE  vfs_plugin.o
+    COMPILE  wcscoll.o
+    COMPILE  wcsxfrm.o
+    CONVERT  libc.symbols.s
+    ASSEMBLE libc.symbols.o
+    MERGE    libc.abi.so
+    MERGE    libc.lib.so
+    MERGE    core-nova.lib.a
+[01;33m  Program [0mcore/nova/core
+    COMPILE  construct.o
+[00;33m  Library [0mposix
+    CONVERT  posix.symbols.s
+    ASSEMBLE posix.symbols.o
+    MERGE    posix.abi.so
+[00;33m  Library [0mlwip_legacy
+    COMPILE  api_lib.o
+    COMPILE  api_msg.o
+    COMPILE  dns.o
+    COMPILE  dhcp.o
+    COMPILE  def.o
+[00;33m  Library [0mlibm
+    COMPILE  err.o
+    COMPILE  etharp.o
+    COMPILE  icmp.o
+    COMPILE  b_exp.o
+    COMPILE  igmp.o
+    COMPILE  inet_chksum.o
+    COMPILE  init.o
+    COMPILE  b_log.o
+    COMPILE  b_tgamma.o
+    COMPILE  e_acos.o
+    COMPILE  ip4.o
+    COMPILE  ip4_addr.o
+    COMPILE  ip_frag.o
+    COMPILE  e_acosf.o
+    COMPILE  e_acosh.o
+    COMPILE  mem.o
+    COMPILE  memp.o
+    COMPILE  e_acoshf.o
+    COMPILE  netbuf.o
+    COMPILE  netdb.o
+    COMPILE  netif.o
+    COMPILE  netifapi.o
+    COMPILE  e_asin.o
+    COMPILE  e_acosl.o
+    COMPILE  pbuf.o
+    COMPILE  nic.o
+    COMPILE  printf.o
+    COMPILE  sockets.o
+    COMPILE  raw.o
+    COMPILE  stats.o
+    COMPILE  sys.o
+    COMPILE  e_asinf.o
+    COMPILE  sys_arch.o
+    COMPILE  tcp.o
+    COMPILE  tcp_in.o
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:[m[K In function ‘[01m[Kerr_t genode_netif_init(netif*)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:282:48:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   Nic::Packet_allocator *tx_block_alloc = new ([01;35m[Kenv[m[K()->heap())
+                                                [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:282:52:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   Nic::Packet_allocator *tx_block_alloc = new (env([01;35m[K)[m[K->heap())
+                                                    [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:283:65:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+                                           Nic::Packet_allocator([01;35m[Kenv[m[K()->heap());
+                                                                 [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:283:69:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+                                           Nic::Packet_allocator(env([01;35m[K)[m[K->heap());
+                                                                     [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:288:15:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    nic = new ([01;35m[Kenv[m[K()->heap()) Nic::Connection(tx_block_alloc,
+               [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:288:19:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    nic = new (env([01;35m[K)[m[K->heap()) Nic::Connection(tx_block_alloc,
+                   [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:290:62:[m[K [01;35m[Kwarning: [m[K‘[01m[KNic::Connection::Connection(Genode::Range_allocator*, Genode::size_t, Genode::size_t, const char*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+                                              nbs->rx_buf_size[01;35m[K)[m[K;
+                                                              [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33:0[m[K:
+[01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:68:2:[m[K [01;36m[Knote: [m[Kdeclared here
+  [01;36m[KConnection[m[K(Genode::Range_allocator *tx_block_alloc,
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:293:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    destroy([01;35m[Kenv[m[K()->heap(), tx_block_alloc);
+            [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:293:16:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    destroy(env([01;35m[K)[m[K->heap(), tx_block_alloc);
+                [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:298:34:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   Nic_receiver_thread *th = new ([01;35m[Kenv[m[K()->heap())
+                                  [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:298:38:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   Nic_receiver_thread *th = new (env([01;35m[K)[m[K->heap())
+                                      [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/os/packet_stream.h:79[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/packet_stream_tx/packet_stream_tx.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/nic_session.h:21[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/capability.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/client.h:18[m[K,
+                 from [01m[K/home/devuan/genode/repos/os/include/nic_session/connection.h:17[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/nic.cc:33[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+    COMPILE  e_asinl.o
+    COMPILE  tcp_out.o
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:[m[K In function ‘[01m[Kerr_t sys_sem_new(sys_sem_t*, u8_t)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:235:49:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    Genode::Timed_semaphore *_sem = new (Genode::[01;35m[Kenv[m[K()->heap())
+                                                 [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:235:53:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    Genode::Timed_semaphore *_sem = new (Genode::env([01;35m[K)[m[K->heap())
+                                                     [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:[m[K In function ‘[01m[Kvoid sys_sem_free(sys_sem_t*)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:262:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     destroy(Genode::[01;35m[Kenv[m[K()->heap(), _sem);
+                     [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:262:25:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     destroy(Genode::env([01;35m[K)[m[K->heap(), _sem);
+                         [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:[m[K In function ‘[01m[Kerr_t sys_mbox_new(sys_mbox_t*, int)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:398:34:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    Mailbox* _mbox = new (Genode::[01;35m[Kenv[m[K()->heap()) Mailbox();
+                                  [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:398:38:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    Mailbox* _mbox = new (Genode::env([01;35m[K)[m[K->heap()) Mailbox();
+                                      [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:[m[K In function ‘[01m[Kvoid sys_mbox_free(sys_mbox_t*)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:421:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     destroy(Genode::[01;35m[Kenv[m[K()->heap(), _mbox);
+                     [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:421:25:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     destroy(Genode::env([01;35m[K)[m[K->heap(), _mbox);
+                         [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:[m[K In function ‘[01m[Ksys_thread_t sys_thread_new(const char*, void (*)(void*), void*, int, int)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:585:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    Lwip_thread *_th = new (Genode::[01;35m[Kenv[m[K()->heap())
+                                    [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:585:40:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+    Lwip_thread *_th = new (Genode::env([01;35m[K)[m[K->heap())
+                                        [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/lwip_legacy/platform/sys_arch.cc:16[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+    COMPILE  e_atan2.o
+    COMPILE  e_atan2f.o
+    COMPILE  tcpip.o
+    COMPILE  e_atan2l.o
+    COMPILE  timers.o
+    COMPILE  udp.o
+    COMPILE  e_atanh.o
+    COMPILE  e_atanhf.o
+    COMPILE  e_cosh.o
+    COMPILE  e_coshf.o
+    COMPILE  e_exp.o
+    COMPILE  e_expf.o
+    COMPILE  e_fmod.o
+    COMPILE  e_fmodl.o
+    COMPILE  e_gamma.o
+    COMPILE  e_fmodf.o
+    COMPILE  e_gamma_r.o
+    COMPILE  e_gammaf.o
+    COMPILE  e_hypot.o
+    COMPILE  e_gammaf_r.o
+    COMPILE  e_hypotl.o
+    COMPILE  e_hypotf.o
+    COMPILE  e_j0.o
+    COMPILE  e_j0f.o
+    COMPILE  e_j1.o
+    COMPILE  e_j1f.o
+    COMPILE  e_jn.o
+    COMPILE  e_lgamma.o
+    COMPILE  e_lgammaf.o
+    COMPILE  e_jnf.o
+    COMPILE  e_lgammaf_r.o
+    COMPILE  e_lgamma_r.o
+    COMPILE  e_log10.o
+    COMPILE  e_log.o
+    COMPILE  e_logf.o
+    COMPILE  e_pow.o
+    COMPILE  e_log10f.o
+    COMPILE  e_remainderf.o
+    COMPILE  e_powf.o
+    COMPILE  e_remainder.o
+    COMPILE  e_scalb.o
+    COMPILE  e_remainderl.o
+    COMPILE  e_scalbf.o
+    COMPILE  e_sinh.o
+    COMPILE  e_sinhf.o
+    COMPILE  e_sqrt.o
+    COMPILE  e_sqrtf.o
+    COMPILE  e_sqrtl.o
+    COMPILE  invtrig.o
+    COMPILE  k_cosf.o
+    COMPILE  k_cos.o
+    COMPILE  k_cosl.o
+    COMPILE  k_rem_pio2.o
+    COMPILE  k_sin.o
+    COMPILE  k_sinf.o
+    COMPILE  k_sinl.o
+    COMPILE  k_tan.o
+    COMPILE  k_tanf.o
+    COMPILE  k_tanl.o
+    COMPILE  log2.o
+    COMPILE  msun/amd64/fenv.o
+    COMPILE  s_asinh.o
+    COMPILE  s_asinhf.o
+    COMPILE  s_atan.o
+    COMPILE  s_atanf.o
+    COMPILE  s_atanl.o
+    COMPILE  s_cargf.o
+    COMPILE  s_carg.o
+    COMPILE  s_cbrt.o
+    COMPILE  s_cargl.o
+    COMPILE  s_cbrtf.o
+    COMPILE  s_ceil.o
+    COMPILE  s_ceill.o
+    COMPILE  s_ceilf.o
+    COMPILE  s_cimag.o
+    COMPILE  s_cimagf.o
+    COMPILE  s_cimagl.o
+    COMPILE  s_conj.o
+    COMPILE  s_conjl.o
+    COMPILE  s_conjf.o
+    COMPILE  s_copysign.o
+    COMPILE  s_copysignf.o
+    COMPILE  s_copysignl.o
+    COMPILE  s_cosf.o
+    COMPILE  s_cosl.o
+    COMPILE  s_cproj.o
+    COMPILE  s_cos.o
+    COMPILE  s_cprojl.o
+    COMPILE  s_cprojf.o
+    COMPILE  s_creal.o
+    COMPILE  s_crealf.o
+    COMPILE  s_creall.o
+    COMPILE  s_csqrt.o
+    COMPILE  s_erf.o
+    COMPILE  s_erff.o
+    COMPILE  s_csqrtl.o
+    COMPILE  s_exp2.o
+    COMPILE  s_csqrtf.o
+    COMPILE  s_exp2f.o
+    COMPILE  s_expm1.o
+    COMPILE  s_expm1f.o
+    COMPILE  s_fabs.o
+    COMPILE  s_fabsf.o
+    COMPILE  s_fabsl.o
+    COMPILE  s_fdim.o
+    COMPILE  s_finitef.o
+    COMPILE  s_floor.o
+    COMPILE  s_finite.o
+    COMPILE  s_floorf.o
+    COMPILE  s_floorl.o
+    COMPILE  s_fma.o
+    COMPILE  s_fmaf.o
+    COMPILE  s_fmal.o
+    COMPILE  s_fmax.o
+    COMPILE  s_fmaxl.o
+    COMPILE  s_fmaxf.o
+    COMPILE  s_fmin.o
+    COMPILE  s_fminf.o
+    COMPILE  s_fminl.o
+    COMPILE  s_frexp.o
+    COMPILE  s_frexpf.o
+    COMPILE  s_frexpl.o
+    COMPILE  s_ilogb.o
+    COMPILE  s_ilogbf.o
+    COMPILE  s_ilogbl.o
+    MERGE    posix.lib.so
+    COMPILE  s_isfinite.o
+    COMPILE  s_isnan.o
+    COMPILE  s_isnormal.o
+    COMPILE  s_llrint.o
+    COMPILE  s_llrintl.o
+    COMPILE  s_llround.o
+    COMPILE  s_llrintf.o
+    COMPILE  s_llroundf.o
+    COMPILE  s_llroundl.o
+    COMPILE  s_log1pf.o
+    COMPILE  s_log1p.o
+    COMPILE  s_logb.o
+    COMPILE  s_lrint.o
+    COMPILE  s_logbl.o
+    COMPILE  s_logbf.o
+    COMPILE  s_lrintl.o
+    COMPILE  s_lrintf.o
+    COMPILE  s_lroundf.o
+    COMPILE  s_modf.o
+    COMPILE  s_lround.o
+    COMPILE  s_lroundl.o
+    COMPILE  s_modfl.o
+    COMPILE  s_nan.o
+    COMPILE  s_modff.o
+    COMPILE  s_nearbyint.o
+    COMPILE  s_nanl.o
+    COMPILE  s_nextafter.o
+    COMPILE  s_nextafterf.o
+    COMPILE  s_nextafterl.o
+    COMPILE  s_nexttowardf.o
+    COMPILE  s_remquo.o
+    COMPILE  s_nexttoward.o
+    COMPILE  s_remquol.o
+    COMPILE  s_remquof.o
+    COMPILE  s_rintf.o
+    COMPILE  s_rint.o
+    COMPILE  s_rintl.o
+    COMPILE  s_round.o
+    COMPILE  s_roundf.o
+    COMPILE  s_roundl.o
+    COMPILE  s_scalbln.o
+    COMPILE  s_scalbn.o
+    COMPILE  s_scalbnf.o
+    COMPILE  s_signbit.o
+    COMPILE  s_scalbnl.o
+    COMPILE  s_signgam.o
+    COMPILE  s_significand.o
+    COMPILE  s_significandf.o
+    COMPILE  s_sinf.o
+    COMPILE  s_sin.o
+    COMPILE  s_sinl.o
+    COMPILE  s_tan.o
+    COMPILE  s_tanh.o
+    COMPILE  s_tanhf.o
+    COMPILE  s_tanf.o
+    COMPILE  s_tanl.o
+    COMPILE  s_tgammaf.o
+    COMPILE  s_truncf.o
+    COMPILE  s_truncl.o
+    COMPILE  w_cabs.o
+    COMPILE  s_trunc.o
+    COMPILE  w_cabsf.o
+    COMPILE  w_cabsl.o
+    COMPILE  w_drem.o
+    COMPILE  w_dremf.o
+    CONVERT  libm.symbols.s
+    ASSEMBLE libm.symbols.o
+    MERGE    libm.abi.so
+    MERGE    libm.lib.so
+    MERGE    lwip_legacy.lib.so
+[00;33m  Library [0mlibc_lwip
+    COMPILE  init.o
+    COMPILE  plugin.o
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:[m[K In member function ‘[01m[Kvirtual Libc::File_descriptor* {anonymous}::Plugin::accept(Libc::File_descriptor*, sockaddr*, socklen_t*)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:262:41:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  Plugin_context *context = new (Genode::[01;35m[Kenv[m[K()->heap()) Plugin_context(lwip_fd);
+                                         [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:15[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:262:45:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  Plugin_context *context = new (Genode::env([01;35m[K)[m[K->heap()) Plugin_context(lwip_fd);
+                                             [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:15[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:[m[K In member function ‘[01m[Kvirtual int {anonymous}::Plugin::close(Libc::File_descriptor*)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:284:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   Genode::destroy(Genode::[01;35m[Kenv[m[K()->heap(), context(fdo));
+                           [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:15[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:284:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   Genode::destroy(Genode::env([01;35m[K)[m[K->heap(), context(fdo));
+                               [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:15[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:[m[K In member function ‘[01m[Kvirtual Libc::File_descriptor* {anonymous}::Plugin::socket(int, int, int)[m[K’:
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:531:41:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  Plugin_context *context = new (Genode::[01;35m[Kenv[m[K()->heap()) Plugin_context(lwip_fd);
+                                         [01;35m[K^~~[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:15[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+[01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:531:45:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenode::Env_deprecated* Genode::env()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  Plugin_context *context = new (Genode::env([01;35m[K)[m[K->heap()) Plugin_context(lwip_fd);
+                                             [01;35m[K^[m[K
+In file included from [01m[K/home/devuan/genode/repos/base/include/base/env.h:25:0[m[K,
+                 from [01m[K/home/devuan/genode/repos/libports/src/lib/libc_lwip/plugin.cc:15[m[K:
+[01m[K/home/devuan/genode/repos/base/include/deprecated/env.h:50:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  static inline Env_deprecated *[01;36m[Kenv[m[K()
+                                [01;36m[K^~~[m[K
+    MERGE    libc_lwip.lib.a
+    COMPILE  plugin.o
+[00;33m  Library [0mlibc_lwip_nic_dhcp
+    MERGE    libc_lwip_nic_dhcp.lib.a
+[01;33m  Program [0mtester_lwip/tester_lwip
+    COMPILE  ../tester/tester.o
+    LINK     tester_lwip
+make[1]: Leaving directory '/home/devuan/genode/build/x86_64'
+genode build completed
+checking configuration syntax
+  CHECK init
+building targets: kernel core/nova lib/ld/nova
+spawn make kernel core/nova lib/ld/nova
+make[1]: Entering directory '/home/devuan/genode/build/x86_64'
+checking library dependencies...
+[00;33m  Library [0malarm
+[00;33m  Library [0mldso-startup
+[00;33m  Library [0mstartup-nova
+[00;33m  Library [0mtimed_semaphore
+[00;33m  Library [0mcxx
+[00;33m  Library [0mtimeout
+    COMPILE  duration.o
+    COMPILE  timeout.o
+    COMPILE  timer_connection_timestamp.o
+    COMPILE  timer_connection.o
+    COMPILE  timer_connection_time.o
+[00;33m  Library [0mbase-nova-common
+[01;33m  Program [0mkernel/nova/hypervisor
+    COMPILE  acpi_fadt.o
+    COMPILE  acpi.o
+    COMPILE  acpi_dmar.o
+[00;33m  Library [0mcore-nova
+    COMPILE  version.o
+    COMPILE  acpi_hpet.o
+    COMPILE  acpi_madt.o
+    MERGE    core-nova.lib.a
+    COMPILE  acpi_mcfg.o
+    COMPILE  acpi_rsdp.o
+    COMPILE  acpi_rsdt.o
+    COMPILE  acpi_table.o
+    COMPILE  avl.o
+[01;33m  Program [0mcore/nova/core
+    COMPILE  bootstrap.o
+    COMPILE  buddy.o
+    COMPILE  cmdline.o
+    COMPILE  console.o
+    COMPILE  console_serial.o
+    COMPILE  console_mem.o
+    COMPILE  counter.o
+    COMPILE  console_vga.o
+    COMPILE  cpu.o
+    COMPILE  dmar.o
+    COMPILE  ec.o
+    COMPILE  ec_exc.o
+    COMPILE  ec_svm.o
+    COMPILE  ec_vmx.o
+    COMPILE  entry.o
+    COMPILE  fpu.o
+    COMPILE  gdt.o
+    COMPILE  gsi.o
+    COMPILE  hip.o
+    COMPILE  hpet.o
+    COMPILE  hpt.o
+    COMPILE  idt.o
+    COMPILE  init.o
+    COMPILE  ioapic.o
+    COMPILE  keyb.o
+    COMPILE  lapic.o
+    COMPILE  mca.o
+    COMPILE  mdb.o
+    COMPILE  mtrr.o
+    COMPILE  oom.o
+    COMPILE  memory.o
+    COMPILE  pci.o
+    COMPILE  pd.o
+    MERGE    timeout.lib.a
+[00;33m  Library [0mbase-nova
+    COMPILE  cache.o
+    COMPILE  pt.o
+    COMPILE  default_log.o
+    COMPILE  pte.o
+    COMPILE  rcu.o
+    COMPILE  regs.o
+    COMPILE  env_deprecated.o
+    COMPILE  env_reinit.o
+    COMPILE  sc.o
+    COMPILE  si.o
+    COMPILE  slab.o
+    COMPILE  sm.o
+    COMPILE  space_mem.o
+    COMPILE  space_obj.o
+    COMPILE  space_pio.o
+    COMPILE  start.o
+    COMPILE  string.o
+    COMPILE  syscall.o
+    COMPILE  svm.o
+    COMPILE  timeout.o
+    COMPILE  timeout_budget.o
+    COMPILE  timeout_hypercall.o
+    COMPILE  tss.o
+    COMPILE  utcb.o
+    COMPILE  vmx.o
+    COMPILE  vtlb.o
+    COMPILE  log_console.o
+    COMPILE  main_thread_cap.o
+    COMPILE  rpc_cap_alloc.o
+    COMPILE  signal.o
+    COMPILE  stack_area.o
+    COMPILE  thread_start.o
+    LINK     hypervisor
+    MERGE    base-nova.lib.a
+    COMPILE  debug.o
+    COMPILE  dependency.o
+    COMPILE  exception.o
+    ASSEMBLE jmp_slot.o
+[00;33m  Library [0mld-nova
+    COMPILE  shared_object.o
+    COMPILE  test.o
+    COMPILE  main.o
+    CONVERT  symbol.map
+    CONVERT  ld-nova.symbols.s
+    ASSEMBLE ld-nova.symbols.o
+    MERGE    ld-nova.abi.so
+    MERGE    ld-nova.lib.so
+[01;33m  Program [0mlib/ld/nova/ld-nova
+make[1]: Leaving directory '/home/devuan/genode/build/x86_64'
+genode build completed
+using 'core-nova.o' as 'core.o'
+using 'ld-nova.lib.so' as 'ld.lib.so'
+using 'nova_timer_drv' as 'timer'
+install bootloader
+creating ISO image...
+xorriso 1.4.6 : RockRidge filesystem manipulator, libburnia project.
+
+spawn qemu-system-x86_64 -no-kvm -display sdl -cpu core2duo -net nic,model=e1000 -net user -redir tcp:5555::80 -nographic -serial mon:stdio -m 512 -cdrom var/run/tester_lwip.iso -machine q35
+qemu-system-x86_64: -redir tcp:5555::80: The -redir option is deprecated. Please use '-netdev user,hostfwd=...' instead.
+Bender: Hello World.
+framebuffer at [fd000000+fd12c000) 640x480@32
+framebuffer at [fd000000+fd12c000) 640x480@32
+NOVA Microhypervisor v7-8467625 (x86_64): Jul 15 2018 13:26:50 [gcc 6.3.0] [MBI2]
+
+[ 0] TSC:3205017 kHz BUS:1003448 kHz (measured)
+[ 0] CORE:0:0:0 6:f:b:0 [0] Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz
+Hypervisor reports 1x1 CPU [0m
+[34mWarning: CPU has no invariant TSC.[0m
+CPU ID (genode->kernel:package:core:thread) remapping[0m
+ remap (0->0:0:0:0) boot cpu[0m
+Hypervisor info page contains 12 memory descriptors:[0m
+core     image  [0000000000100000,0000000000728000)[0m
+binaries region [0000000000280000,0000000000728000) free for reuse[0m
+detected physical memory: 0x0000000000000000 - size: 0x000000000009fc00[0m
+use      physical memory: 0x0000000000000000 - size: 0x000000000009f000[0m
+detected physical memory: 0x0000000000100000 - size: 0x000000001fedf000[0m
+use      physical memory: 0x0000000000100000 - size: 0x000000001fedf000[0m
+detected res memory: 0x1f9b5000 - size: 0x6292f0 type=-2[0m
+detected res memory: 0x9fc00 - size: 0x400 type=2[0m
+detected res memory: 0xf0000 - size: 0x10000 type=2[0m
+detected res memory: 0x1ffdf000 - size: 0x21000 type=2[0m
+detected res memory: 0xb0000000 - size: 0x10000000 type=2[0m
+detected res memory: 0xfed1c000 - size: 0x4000 type=2[0m
+detected res memory: 0xfffc0000 - size: 0x40000 type=2[0m
+detected res memory: 0xfd000000 - size: 0x2800001e00120 type=-5[0m
+detected res memory: 0x1000000 - size: 0x2400000 type=-1[0m
+detected res memory: 0x1ffe23f3 - size: 0x0 type=-3[0m
+ROM modules:
+ ROM: [000000001fb36000,000000001fb56678) acpi_drv
+ ROM: [000000001ffdd000,000000001ffddded) config
+ ROM: [000000000000f000,0000000000010000) core_log
+ ROM: [000000001ff87000,000000001ffdc940) init
+ ROM: [000000001fcac000,000000001fd90e60) ld.lib.so
+ ROM: [000000001fd91000,000000001feebc28) libc.lib.so
+ ROM: [000000001feec000,000000001ff19fb8) libm.lib.so
+ ROM: [000000001fbe1000,000000001fc23af8) lwip_legacy.lib.so
+ ROM: [000000001fc32000,000000001fc87ab0) nic_drv
+ ROM: [000000001fb77000,000000001fbc8f18) platform_drv
+ ROM: [000000000000d000,000000000000e000) platform_info
+ ROM: [000000001fc24000,000000001fc31d40) posix.lib.so
+ ROM: [000000001fb57000,000000001fb761b8) report_rom
+ ROM: [000000001fbc9000,000000001fbe0f20) tester_lwip
+ ROM: [000000001fc88000,000000001fcab348) timer
+ ROM: [000000001ff1a000,000000001ff86f08) vfs.lib.so
+[0m
+Genode 18.05-130-gb485caf33[0m
+468 MiB RAM and 63253 caps assigned to init[0m
+[init] parent provides[0m[0m
+[init]   service "ROM"[0m[0m
+[init]   service "LOG"[0m[0m
+[init]   service "CAP"[0m[0m
+[init]   service "RAM"[0m[0m
+[init]   service "RM"[0m[0m
+[init]   service "CPU"[0m[0m
+[init]   service "PD"[0m[0m
+[init]   service "IRQ"[0m[0m
+[init]   service "IO_PORT"[0m[0m
+[init]   service "IO_MEM"[0m[0m
+[init]   service "SIGNAL"[0m[0m
+[init] child "timer"[0m[0m
+[init]   RAM quota:  776K[0m[0m
+[init]   cap quota:  68[0m[0m
+[init]   ELF binary: timer[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Timer[0m[0m
+[init] child "nic_drv"[0m[0m
+[init]   RAM quota:  20232K[0m[0m
+[init]   cap quota:  98[0m[0m
+[init]   ELF binary: nic_drv[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Nic[0m[0m
+[init] child "tester_lwip"[0m[0m
+[init]   RAM quota:  261896K[0m[0m
+[init]   cap quota:  468[0m[0m
+[init]   ELF binary: tester_lwip[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Tester_lwip[0m[0m
+[init] child "acpi_drv"[0m[0m
+[init]   RAM quota:  2824K[0m[0m
+[init]   cap quota:  368[0m[0m
+[init]   ELF binary: acpi_drv[0m[0m
+[init]   priority:   0[0m[0m
+[init] child "acpi_report_rom"[0m[0m
+[init]   RAM quota:  1800K[0m[0m
+[init]   cap quota:  68[0m[0m
+[init]   ELF binary: report_rom[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service ROM[0m[0m
+[init]   provides service Report[0m[0m
+[init] child "platform_drv"[0m[0m
+[init]   RAM quota:  3848K[0m[0m
+[init]   cap quota:  768[0m[0m
+[init]   ELF binary: platform_drv[0m[0m
+[init]   priority:   0[0m[0m
+[init]   provides service Platform[0m[0m
+[init]   provides service Acpi[0m[0m
+[init -> nic_drv] --- iPXE NIC driver started ---[0m[0m
+[init -> nic_drv] -- init iPXE NIC[0m[0m
+[init] child "acpi_report_rom" announces service "Report"[0m[0m
+[init] child "acpi_report_rom" announces service "ROM"[0m[0m
+[init] child "timer" announces service "Timer"[0m[0m
+[init -> tester_lwip]   0xa0000000 .. 0xafffffff: stack area[0m[0m
+[init -> tester_lwip]   0x30000 .. 0x148fff: ld.lib.so[0m[0m
+[init -> tester_lwip]   0x1019000 .. 0x1183fff: libc.lib.so[0m[0m
+[init -> tester_lwip]   0x1184000 .. 0x11f0fff: vfs.lib.so[0m[0m
+[init -> tester_lwip]   0x11f1000 .. 0x121afff: libm.lib.so[0m[0m
+[init -> tester_lwip]   0x121b000 .. 0x125efff: lwip_legacy.lib.so[0m[0m
+[init -> tester_lwip]   0x125f000 .. 0x126bfff: posix.lib.so[0m[0m
+[init -> acpi_drv] Found MADT[0m[0m
+[init -> acpi_drv] MADT IRQ 0 -> GSI 2 flags: 0[0m[0m
+[init -> acpi_drv] MADT IRQ 5 -> GSI 5 flags: 13[0m[0m
+[init -> acpi_drv] MADT IRQ 9 -> GSI 9 flags: 13[0m[0m
+[init -> acpi_drv] MADT IRQ 10 -> GSI 10 flags: 13[0m[0m
+[init -> acpi_drv] MADT IRQ 11 -> GSI 11 flags: 13[0m[0m
+[init -> acpi_drv] Found MCFG[0m[0m
+[init -> acpi_drv] MCFG BASE 0xb0000000 seg 0x0 bus 0x0-0xff[0m[0m
+[init -> acpi_drv] RSDT OEM 'BOCHS ', table id 'BXPCRSDT', revision 1, creator 'BXPC' (1)[0m[0m
+[init -> tester_lwip] using the lwIP libc plugin[0m[0m
+[init -> platform_drv] ECAM/MMCONF range 00:00.0-ff:1f.7 - addr [00000000b0000000,00000000c0000000)[0m[0m
+[init -> tester_lwip] init[0m[0m
+[init -> platform_drv] Root bridge: 00:00.0[0m[0m
+[init -> tester_lwip] Using DHCP for interface configuration.[0m[0m
+[init] child "platform_drv" announces service "Platform"[0m[0m
+[init -> nic_drv] [36mFound: 00:02.0 8086:100e (rev 03) IRQ 0b[0m[0m
+[init -> nic_drv] [36musing driver 82540em[0m[0m
+[init -> nic_drv] [36mPCI device 00:02.0 latency timer is unreasonably low at 0. Setting to 32.[0m
+[init -> nic_drv] [0m[0m
+[init -> nic_drv] [36mbus_addr = febc0000 len = 20000[0m[0m
+[init -> nic_drv] [35msnprintf not implemented[0m[0m
+[init -> platform_drv] IRQ override 11->11, trigger mode: LEVEL, polarity: HIGH[0m[0m
+[init -> platform_drv] 00:02.0 uses IRQ, vector 0xb, non-maskable[0m[0m
+[init] child "nic_drv" announces service "Nic"[0m[0m
+[init -> nic_drv] MAC address 52:54:00:12:34:56[0m[0m
+[init -> tester_lwip] listen socket is in NONBLOCK mode: 0[0m
+[init -> tester_lwip] listen socket is in NONBLOCK mode: 0[0m
+[init -> tester_lwip] waiting for connection...[0m
+
+output:
+Got it
+
+The End
+
+
+Run script execution successful.
