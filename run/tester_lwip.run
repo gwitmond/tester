@@ -1,0 +1,107 @@
+# Tester
+
+
+## Build
+
+set build_components { tester_lwip core init drivers/timer drivers/nic }
+
+source ${genode_dir}/repos/base/run/platform_drv.inc
+append_platform_drv_build_components
+
+build $build_components
+
+create_boot_directory
+
+## Config
+
+append config {
+<config verbose="yes">
+        <parent-provides>
+                <service name="ROM"/>
+                <service name="LOG"/>
+                <service name="CAP"/>
+                <service name="RAM"/>
+                <service name="RM"/>
+                <service name="CPU"/>
+                <service name="PD"/>
+                <service name="IRQ"/>
+                <service name="IO_PORT"/>
+                <service name="IO_MEM"/>
+                <service name="SIGNAL"/>
+        </parent-provides>
+
+        <default-route>
+                <any-service> <parent/> <any-child/> </any-service>
+        </default-route>
+
+	<default caps="100" />
+
+	<start name="timer">
+		<resource name="RAM" quantum="1M"/>
+		<provides> <service name="Timer"/> </provides>
+	</start>
+
+	<start name="nic_drv" caps="130">
+                <resource name="RAM" quantum="20M"/>
+                <provides><service name="Nic"/></provides>
+        </start>
+
+        <start name="tester_lwip" caps="500">
+                <resource name="RAM" quantum="256M"/>
+                <provides><service name="Tester_lwip"/></provides>
+		<config ld_verbose="yes" >
+			<libc stdout="/dev/log" stderr="/dev/log" />
+                        <vfs>	<dir name="dev"> <log/> </dir>
+				<dir name="websites">
+				     <dir name="localhost">
+					  <inline name="index.html">Hallo Professor</inline>
+				     </dir>
+				</dir>
+			</vfs>
+		</config>
+        </start>
+}
+
+append_platform_drv_config
+
+append config {
+</config>
+}
+
+install_config $config
+
+## Boot image
+
+set boot_modules {
+	core init vfs.lib.so libm.lib.so libc.lib.so \
+	ld.lib.so timer nic_drv posix.lib.so 			    		\
+	lwip_legacy.lib.so
+	tester_lwip
+}
+
+# platform-specific modules
+append_platform_drv_boot_modules
+
+build_boot_image $boot_modules
+
+append_if [have_spec x86]     qemu_args " -net nic,model=e1000 "
+
+append qemu_args " -net user -redir tcp:5555::80 "
+append qemu_args " -nographic -serial mon:stdio "
+
+
+run_genode_until "waiting for connection" 120
+#run_genode_until forever
+
+set output [exec 2> /dev/null wget -O - http://localhost:5555/index.html]
+puts "\noutput:\n$output\n"
+sleep 1
+if {![regexp {Got it} $output dummy]} {
+        puts stderr "Error: output not as expected"
+        exit 1
+}
+
+# if all goes well, it can sleep for a while
+sleep 120
+puts "The End\n"
+
